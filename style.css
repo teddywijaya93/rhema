@@ -1,0 +1,7 @@
+.navbar-default {
+    background-color: black;
+}
+
+.nav .navbar-nav li a {
+    font-size: 32px;
+}
