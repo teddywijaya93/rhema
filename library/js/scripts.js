@@ -15,6 +15,37 @@ $(window).scroll(function() {
     }
 });
 
+var swiper = new Swiper(".swiper-banner", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+    },
+});
+
+var swiper = new Swiper(".swiper-pengajar", {
+    spaceBetween: 30,
+    autoplay: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: "#leftarrow",
+        prevEl: "#rightarrow",
+    },
+    breakpoints: {
+        320: {slidesPerView: 2},
+        480: {slidesPerView: 3},
+        992: {slidesPerView: 4},
+    }
+});
+
 // AOS - Animate
 AOS.init({once: true});
 

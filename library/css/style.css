@@ -10,24 +10,34 @@ Happy Developing!
 /* =========== for all dekstop version css ===========*/
 a{text-decoration: none;}
 html {scroll-behavior: smooth;}
-*{font-family: 'Lato', sans-serif;}
-
-/* =========== Header */
-
-/* =========== Footer */
-
-/* =========== Body */
-#rhema, #why{padding: 80px 0;}
-.title-hometwo{
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: .3px;
-    line-height: 30px;
-    margin: auto;
-    width: 80%;
+*{
+    font-family: 'Lato', sans-serif;
+    color: #494545;
 }
 
-/* =========== Back To Top */
+/* ============================== Header */
+#section-header-top{
+    background: #FFFFFF;
+    display: none;
+    /* padding: 15px 0; */
+}
+.logo-header-img{width: 100px;}
+.txt-logo{
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    line-height: 25px;
+}
+.header-menu{
+    font-size: 16px;
+    letter-spacing: .3px;
+    margin-right: 20px;
+}
+.header-menu:hover{color: #A72525;}
+.z-10{z-index: 10;}
+
+/* ============================== Footer */
+
+/* ============================== Back To Top */
 #TOP{
     position: fixed;
     bottom: 60px;
@@ -35,8 +45,8 @@ html {scroll-behavior: smooth;}
     z-index: 10;
     font-size: 26px;
     border: none;
-    background: rgba(100,193,167);
-    color: white;
+    background: #A72525;
+    color: #FFFFFF;
     cursor: pointer;
     border-radius: 30px;
     height: 40px;
@@ -49,23 +59,8 @@ html {scroll-behavior: smooth;}
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
     transition: .2s;
 }
-#floating-wa{
-    position: fixed;
-    bottom: 150px;
-    right: 30px;
-    z-index: 11;
-    font-size: 30px;
-    border: none;
-    background: #128C7E;
-    color: #FFFFFF;
-    border-radius: 30px;
-    height: 50px;
-    width: 50px;
-    box-shadow: 0 5px 5px rgba(0,0,0,.25);
-    padding-top: 3px !important;
-}
 
-/* =========== Global */
+/* ============================== Global */
 .breadcrumb-item{font-size: 14px;}
 .breadcrumb-item + .breadcrumb-item::before {
     content: "|";
@@ -98,7 +93,239 @@ html {scroll-behavior: smooth;}
     color: #FFFFFF;
 }
 
-/* ================================== Section Responsive ================================== */
+/* ============================== Body */
+#rhema, #why, #collaboration{padding: 60px 0;}
+.single-page{padding: 50px 0;}
+.banner-home{
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.icon-hometwo{width: 40%;}
+.title-hometwo{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 30px;
+    margin: auto;
+    width: 80%;
+}
+/* =========== Why Rhema */
+.head-why-rhema{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 32px;
+    width: 80%;
+}
+.title-home-why-rhema{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+.desc-home-why-rhema{
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+/* =========== Collab */
+.bg-collab{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 20px;
+}
+.img-home-collab{
+    width: 50%;
+    height: 110px;
+    object-fit: contain;
+    margin-top: 60%;
+}
+.title-home-collab{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+
+/* ============================== About */
+.title-single-about{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.p-top{
+    font-family: "PT Serif", serif;
+    padding-top: 200px;
+    color: #A72525;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 50px;
+}
+.bg-about{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title-single-usa-ina{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.desc-single-usa-ina p{
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+#visimisi{
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title-single-visi-misi {
+    color: #F5CD6C;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.desc-single-visi-misi{
+    font-size: 18px;
+    letter-spacing: .3px;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+}
+.img-single-pendiri-pengajar{border: 1px solid #494545;}
+.nama-single-pendiri-pengajar{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+#leftarrow{
+    --swiper-navigation-size: 16px;
+    background-color: #EDEDED;
+    height: 40px;
+    width: 40px;
+    top: 130px;
+    color: #ADACAC;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-left: 2px;
+    margin-right: -10px;
+}
+#rightarrow{
+    --swiper-navigation-size: 16px;
+    background-color: #EDEDED;
+    height: 40px;
+    width: 40px;
+    top: 130px;
+    color: #ADACAC;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: -10px;
+}
+#leftarrow:hover , #rightarrow:hover{
+    background: #A72525;
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+/* ============================== Persembahan */
+.bg-persembahan-type{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 150px 0px;
+    border-radius: 10px;
+}
+.bg-dukungan-lainnya{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    padding: 80px 0px;
+}
+.title-single-persembahan{
+    color: #F5CD6C;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.desc-single-persembahan{
+    font-size: 18px;
+    letter-spacing: .3px;
+}
+.btn-konfirmasi-persembahan{
+    background-color: #F5CD6C;
+    color: #494545;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 22px;
+    padding: 10px 20px;
+    width: 50%;
+}
+.btn-konfirmasi-persembahan:hover{background-color: #FFFFFF;}
+
+/* ============================== Pendaftaran */
+.bg-pendaftaran{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 150px 0;
+}
+.title-single-pendaftaran{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.desc-single-pendaftaran li{
+    font-size: 18px;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+.title-single-daftar-ua{
+    color: #A72525;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.desc-single-daftar-ua{
+    font-size: 16px;
+    letter-spacing: .3px;
+}
+.title-single-rbtci{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .3px;
+}
+.desc-single-rbtci p{
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+
+/* ============================== Lokasi */
+.bg-lokasi{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    padding: 150px 0;
+}
+
+/* =========== Section Responsive =========== */
 /* Add Screen */
 @media only screen and (min-width:992px) {
     #cont1200px{max-width: 1200px;}

@@ -1,4 +1,4 @@
-<button onclick="topFunction()" id="TOP" title="Back To Top" style="display: block;"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+<button onclick="topFunction()" id="TOP" title="Back To Top" style="display: block;"><i class="fa fa-angle-up text-white" aria-hidden="true"></i></button>
 
 <footer class="footer" role="contentinfo">
     <div class="footer-basic footer-home" data-aos="fade-up" data-aos-duration="2000">

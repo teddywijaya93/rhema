@@ -58,12 +58,12 @@
 	<body <?php body_class(); ?>>
 
 	<header class="header" role="banner">
-		<nav class="navbar navbar-expand-md navbar-light position-absolute w-100">
+		<nav class="navbar navbar-expand-md navbar-light z-10 position-absolute w-100">
 			<div class="container" id="cont1200px">
 				<a class="navbar-brand" href="<?php echo get_site_url(); ?>">
 					<div class="row">
 						<div class="col-6"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/Logo-Rhema-Indonesia-Bg-Black-1.webp" class="logo-header-img"></div>
-						<div class="col-6 my-auto"><p class="txt-logo text-dark mb-0"> Rhema<br/>Indonesia</p></div>
+						<div class="col-6 my-auto"><p class="txt-logo text-white mb-0"> Rhema<br/>Indonesia</p></div>
 					</div>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
@@ -71,13 +71,13 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'home'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/">Beranda</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'profil'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'pendaftaran'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="#">Alumni</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'berita'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'persembahan'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'kontak'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'home'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/">Beranda</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'profil'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'pendaftaran'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="#">Alumni</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'berita'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'persembahan'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'kontak'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
 					</ul>
 				</div> 
 			</div>
