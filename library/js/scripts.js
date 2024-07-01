@@ -17,14 +17,24 @@ $(window).scroll(function() {
 
 var swiper = new Swiper(".swiper-banner", {
     slidesPerView: 1,
-    spaceBetween: 30,
     autoplay: true,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
         clickable: true,
-    },
+    }
+});
+
+var swiper = new Swiper(".swiper-testimonial", {
+    slidesPerView: 1,
+    autoplay: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+    }
 });
 
 var swiper = new Swiper(".swiper-pengajar", {
@@ -43,6 +53,24 @@ var swiper = new Swiper(".swiper-pengajar", {
         320: {slidesPerView: 2},
         480: {slidesPerView: 3},
         992: {slidesPerView: 4},
+    }
+});
+
+var swiper = new Swiper(".swiper-kurikulum", {
+    spaceBetween: 30,
+    autoplay: true,
+    loop: true,
+    grid: {
+        fill: 'row',
+        rows: 2,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        320: {slidesPerView: 2},
+        992: {slidesPerView: 3},
     }
 });
 

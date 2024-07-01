@@ -33,7 +33,7 @@
                 <div class="bg-persembahan-type" style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>)"> 
                     <h4 class="title-single-persembahan text-center mb-3"><?php echo get_the_title($idPersembahan); ?></h4>
                     <div class="desc-single-persembahan text-white text-center mb-3"><?php echo get_the_content($idPersembahan); ?></div>
-                    <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/>Persembahan</a></div>
+                    <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/><?php echo get_the_title($idPersembahan); ?></a></div>
                 </div>
             </div>
             <?php }else{ ?>
@@ -42,7 +42,7 @@
                     <div class="offset-5 col-lg-7">
                         <h4 class="title-single-persembahan text-center mb-3"><?php echo get_the_title($idPersembahan); ?></h4>
                         <div class="desc-single-persembahan text-white text-center mb-3"><?php echo get_the_content($idPersembahan); ?></div>
-                        <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/>Sponsor Beasiswa</a></div>
+                        <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/><?php echo get_the_title($idPersembahan); ?></a></div>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@
 ?>
 
 <div class="bg-pendaftaran" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/PENDAFTARAN-BANNER-02.webp);">
-	<h1 class="p-top fst-italic text-white text-center pt-0">Pendaftaran </h1>
+	<h1 class="p-top fst-italic text-white text-center pt-0"><?php echo get_the_title(); ?></h1>
 </div>
 <?php 
     $args = array(
@@ -69,7 +69,27 @@ wp_reset_query(); ?>
 <div class="single-page" style="background-color: #F9F9F9;">
 	<div class="container" id="cont1200px">
 		<h2 class="title-single-about text-center mb-5">Kurikulum</h2>
-		
+        <div class="swiper swiper-kurikulum">
+            <div class="swiper-wrapper">
+                <?php 
+                    $args = array(
+                        'post_type' => 'kurikulum',
+                        'post_status' => 'publish',
+                    );
+                    $the_query = new WP_Query( $args );
+                    while ( $the_query->have_posts() ) : $the_query->the_post();
+                    $idKur = get_the_ID();
+                ?>
+                <div class="swiper-slide">
+                    <div class="bg-red-kur">
+                        <div class="text-center"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-25"/></div>
+                    </div>
+                    <h4><?php echo get_the_title($idKur); ?></h4>
+                </div>
+                <?php endwhile; 
+                wp_reset_query(); ?>
+            </div>
+        </div>
 	</div>
 </div>
 <?php get_footer(); ?>

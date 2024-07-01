@@ -36,6 +36,34 @@ html {scroll-behavior: smooth;}
 .z-10{z-index: 10;}
 
 /* ============================== Footer */
+.footer-home{
+    background-image: url('http://localhost:8888/rhema/wp-content/uploads/2024/06/footer-01-scaled.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+.logo-footer-img{width: 120px;}
+.footer-site-name{
+    font-family: "PT Serif", serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+.footer-site-desc{
+    font-family: "PT Serif", serif;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: .3px;
+}
+.footer-site-loc{
+    font-size: 16px;
+    letter-spacing: .3px;
+}
+.footer-site-menu{
+    font-size: 16px;
+    letter-spacing: .3px;
+}
 
 /* ============================== Back To Top */
 #TOP{
@@ -78,7 +106,7 @@ html {scroll-behavior: smooth;}
     margin-right: 5px;
     border-radius: 5px;
     background: transparent;
-    color: #655E5E;
+    color: #494545;
     font-size: 14px;
 }
 .page-numbers:hover{
@@ -94,7 +122,7 @@ html {scroll-behavior: smooth;}
 }
 
 /* ============================== Body */
-#rhema, #why, #collaboration{padding: 60px 0;}
+#rhema, #why, #collaboration, #berita{padding: 60px 0;}
 .single-page{padding: 50px 0;}
 .banner-home{
     height: 700px;
@@ -112,6 +140,9 @@ html {scroll-behavior: smooth;}
     width: 80%;
 }
 /* =========== Why Rhema */
+#why{
+    background: #F9F9F9;
+}
 .head-why-rhema{
     font-size: 22px;
     font-weight: bold;
@@ -150,6 +181,53 @@ html {scroll-behavior: smooth;}
     font-weight: bold;
     letter-spacing: .3px;
     line-height: 30px;
+}
+/* =========== Testimonials */
+#bg-red-testimonial{
+    background: #A72525;
+    padding: 60px 0;
+}
+.m-left-home{margin: 0px 50px 0 100px;}
+.head-home-testimonial, .head-home-berita{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 32px;
+}
+.desc-home-testimonial{
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+#bg-grey-testimonial{
+    background: #F9F9F9;
+    padding: 60px 0;
+}
+.padding-home{padding: 0 50px;}
+.img-home-testimonial{width: 20%;}
+.name-home-testimonial{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+.content-home-testimonial{
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 28px;
+}
+
+.title-single-news:hover{color: #A72525;}
+.btn-home-seeall{
+    background: #F5CD6C;
+    color: #494545;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 22px;
+    padding: 10px 20px;
+}
+.btn-home-seeall:hover{
+    background: #A72525;
+    color: #FFFFFF;
 }
 
 /* ============================== About */
@@ -211,7 +289,7 @@ html {scroll-behavior: smooth;}
 }
 #leftarrow{
     --swiper-navigation-size: 16px;
-    background-color: #EDEDED;
+    background: #EDEDED;
     height: 40px;
     width: 40px;
     top: 130px;
@@ -223,7 +301,7 @@ html {scroll-behavior: smooth;}
 }
 #rightarrow{
     --swiper-navigation-size: 16px;
-    background-color: #EDEDED;
+    background: #EDEDED;
     height: 40px;
     width: 40px;
     top: 130px;
@@ -266,7 +344,7 @@ html {scroll-behavior: smooth;}
     letter-spacing: .3px;
 }
 .btn-konfirmasi-persembahan{
-    background-color: #F5CD6C;
+    background: #F5CD6C;
     color: #494545;
     font-size: 16px;
     font-weight: bold;
@@ -275,7 +353,7 @@ html {scroll-behavior: smooth;}
     padding: 10px 20px;
     width: 50%;
 }
-.btn-konfirmasi-persembahan:hover{background-color: #FFFFFF;}
+.btn-konfirmasi-persembahan:hover{background: #FFFFFF;}
 
 /* ============================== Pendaftaran */
 .bg-pendaftaran{
@@ -315,14 +393,85 @@ html {scroll-behavior: smooth;}
     letter-spacing: .3px;
     line-height: 30px;
 }
+.bg-red-kur{
+    background: #A72525;
+    padding: 20px;
+}
+
+/* ============================== Berita */
+.nav-pills{
+    display: flex;
+    justify-content: center;
+}
+.nav-news.active{
+    background: transparent !important;
+    border-bottom: 1px solid #A72525;
+    border-radius: 0px;
+    font-size: 16px;
+    color: #A72525 !important;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    margin: 10px 10px 35px 10px;
+}
+.nav-news:hover{color: #A72525;}
+.nav-news{
+    font-size: 16px;
+    color: #494545;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    margin: 10px 10px 35px 10px;
+}
+.icon-single-news{
+    width: 20px;
+    height: 20px;
+}
+.img-single-news{
+    height: 250px;
+    object-fit: cover;
+}
+.cat-single-news, .cat-single-news a{
+    color: #A72525;
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+.title-single-news{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
 
 /* ============================== Lokasi */
 .bg-lokasi{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 300px;
-    padding: 150px 0;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px 6px;
+}
+.title-single-lokasi{
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: .3px;
+    height: 50px;
+}
+.desc-single-lokasi{
+    font-size: 15px;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+.btn-lokasi{
+    background: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #494545;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+.btn-lokasi:hover{
+    background: #A72525;
+    color: #FFFFFF;
 }
 
 /* =========== Section Responsive =========== */
@@ -335,10 +484,10 @@ html {scroll-behavior: smooth;}
 
 /* SM */
 @media screen and (min-width: 576px) and (max-width: 992px) { 
-
+    .m-left-home{margin: 20px;}
 }
 
 /* XS */
 @media only screen and (max-width:575px) {
-
+    .m-left-home{margin: 20px;}
 }
