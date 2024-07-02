@@ -82,9 +82,9 @@ wp_reset_query(); ?>
                 ?>
                 <div class="swiper-slide">
                     <div class="bg-red-kur">
-                        <div class="text-center"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-25"/></div>
+                        <div class="text-center"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-kur w-25 mb-3"/></div>
+                        <h4 class="title-single-kur text-center text-white mb-0"><?php echo get_the_title($idKur); ?></h4>
                     </div>
-                    <h4><?php echo get_the_title($idKur); ?></h4>
                 </div>
                 <?php endwhile; 
                 wp_reset_query(); ?>

@@ -74,7 +74,7 @@
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'home'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/">Beranda</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'profil'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'pendaftaran'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="#">Alumni</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'berita'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'persembahan'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'kontak'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
@@ -99,7 +99,7 @@
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'home'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/">Beranda</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'profil'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'pendaftaran'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="#">Alumni</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'berita'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'persembahan'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
 						<li class="nav-item my-auto"><a class="nav-link header-menu text-dark <?php echo $args['page'] == 'kontak'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>

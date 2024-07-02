@@ -150,6 +150,12 @@ html {scroll-behavior: smooth;}
     line-height: 32px;
     width: 80%;
 }
+.icon-home-why-rhema{
+    background: #A72525;
+    border-radius: 10px;
+    padding: 10px;
+    width: 75%;
+}
 .title-home-why-rhema{
     font-size: 18px;
     font-weight: bold;
@@ -269,7 +275,7 @@ html {scroll-behavior: smooth;}
 .title-single-visi-misi {
     color: #F5CD6C;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     letter-spacing: .3px;
 }
@@ -395,7 +401,12 @@ html {scroll-behavior: smooth;}
 }
 .bg-red-kur{
     background: #A72525;
-    padding: 20px;
+    padding: 60px;
+}
+.title-single-kur{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .3px;
 }
 
 /* ============================== Berita */
@@ -484,10 +495,66 @@ html {scroll-behavior: smooth;}
 
 /* SM */
 @media screen and (min-width: 576px) and (max-width: 992px) { 
+    /* Footer */
+    .logo-footer-img {width: 100px;}
+    .footer-site-name{font-size: 16px;}
+    .footer-site-desc{font-size: 14px;}
+    .footer-site-loc{font-size: 12px;}
+
+    /* Home */
+    .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
     .m-left-home{margin: 20px;}
+    .desc-home-testimonial{width: 100% !important;}
+    .img-home-testimonial{width: 50%;}
+    .padding-home{padding: 20px;}
+
+    /* Profil */
+    .p-top{height: 45px;}
+    .desc-single-visi-misi{font-size: 16px;}
+    .nama-single-pendiri-pengajar{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    /* Daftar */
+    .bg-red-kur{padding: 50px 10px;}
+    .img-single-kur{width: 55% !important;}
+    .title-single-kur{font-size: 18px;}
+
+    /* Persembahan */
+    .bg-persembahan-type{background-position: left;}
+    .btn-konfirmasi-persembahan{width: 75%;}
 }
 
 /* XS */
 @media only screen and (max-width:575px) {
+    /* Footer */
+    .logo-footer-img {width: 100px;}
+    .footer-site-name{font-size: 16px;}
+    .footer-site-desc{font-size: 14px;}
+    .footer-site-loc{font-size: 12px;}
+
+    /* Home */
+    .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
     .m-left-home{margin: 20px;}
+    .desc-home-testimonial{width: 100% !important;}
+    .img-home-testimonial{width: 50%;}
+    .padding-home{padding: 20px;}
+
+    /* Profil */
+    .p-top{height: 45px;}
+    .desc-single-visi-misi{font-size: 16px;}
+    .nama-single-pendiri-pengajar{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    /* Daftar */
+    .bg-red-kur{padding: 50px 10px;}
+    .img-single-kur{width: 55% !important;}
+    .title-single-kur{font-size: 18px;}
+
+    /* Persembahan */
+    .bg-persembahan-type{background-position: left;}
+    .btn-konfirmasi-persembahan{width: 75%;}
 }

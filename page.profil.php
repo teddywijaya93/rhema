@@ -60,11 +60,11 @@
 <div class="single-page">
 	<div class="container" id="cont1200px">
 		<div class="row">
-			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0 order-lg-1 order-sm-2 order-2">
 				<h4 class="title-single-usa-ina mb-3"><?php echo $titleina; ?></h4>
 				<div class="desc-single-usa-ina mb-0"><?php echo $descina; ?></div>
 			</div>
-			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo $urlina; ?>" class="w-100"></div>
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0 order-lg-2 order-sm-1 order-1"><img src="<?php echo $urlina; ?>" class="w-100"></div>
 		</div>
 	</div>
 </div>
@@ -79,7 +79,7 @@
 		<h2 class="title-single-about text-center mb-5">Pendiri dan Pemimpin</h2>
 		<div class="row">
 			<?php foreach($pendiri as $pend){ ?>
-			<div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
+			<div class="col-6 col-sm-6 col-lg-4 mb-3 mb-lg-0">
 				<img src="<?php echo wp_get_attachment_url($pend['img-pendiri']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
 				<h4 class="nama-single-pendiri-pengajar text-center mb-0"><?php echo $pend['nama-pendiri']; ?></h4>
 			</div>

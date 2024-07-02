@@ -28,7 +28,7 @@ var swiper = new Swiper(".swiper-banner", {
 
 var swiper = new Swiper(".swiper-testimonial", {
     slidesPerView: 1,
-    autoplay: true,
+    autoplay: false,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -39,7 +39,7 @@ var swiper = new Swiper(".swiper-testimonial", {
 
 var swiper = new Swiper(".swiper-pengajar", {
     spaceBetween: 30,
-    autoplay: true,
+    autoplay: false,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -58,7 +58,7 @@ var swiper = new Swiper(".swiper-pengajar", {
 
 var swiper = new Swiper(".swiper-kurikulum", {
     spaceBetween: 30,
-    autoplay: true,
+    autoplay: false,
     loop: true,
     grid: {
         fill: 'row',

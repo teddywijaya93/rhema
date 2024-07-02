@@ -39,7 +39,7 @@
             <?php }else{ ?>
             <div class="col-12 mb-3">
                 <div class="bg-persembahan-type" style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>)"> 
-                    <div class="offset-5 col-lg-7">
+                    <div class="col-12 offset-lg-5 col-lg-7">
                         <h4 class="title-single-persembahan text-center mb-3"><?php echo get_the_title($idPersembahan); ?></h4>
                         <div class="desc-single-persembahan text-white text-center mb-3"><?php echo get_the_content($idPersembahan); ?></div>
                         <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/><?php echo get_the_title($idPersembahan); ?></a></div>
@@ -53,6 +53,6 @@
 </div>
 <div class="bg-dukungan-lainnya" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/DUKUNGAN-LAIN-scaled.webp);">
     <h4 class="title-single-persembahan text-dark text-center mb-3">Dukungan Lainnya</h4>
-    <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan w-25">Konfirmasi<br/>Dukungan Lainnya</a></div>
+    <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/>Dukungan Lainnya</a></div>
 </div>
 <?php get_footer(); ?>

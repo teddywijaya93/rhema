@@ -27,6 +27,7 @@
 		<?php endwhile; 
 		wp_reset_query(); ?>
 	</div>
+	<div class="swiper-pagination"></div>
 </div>
 
 <?php 
@@ -64,8 +65,8 @@
 				<h2 class="head-why-rhema mb-4">Mengapa memilih Rhema Bible Training Center Indonesia ?</h2>
 				<?php foreach($sec3 as $part3){ ?>
 				<div class="row mb-3">
-					<div class="col-3"></div>
-					<div class="col-9">
+					<div class="col-2 text-center"><img src="<?php echo wp_get_attachment_url($part3['icon-homethird-hover']); ?>" class="icon-home-why-rhema"/></div>
+					<div class="col-10">
 						<h4 class="title-home-why-rhema mb-3"><?php echo $part3['title-homethird']; ?></h4>
 						<p class="desc-home-why-rhema mb-0"><?php echo $part3['desc-homethird']; ?></p>
 					</div>
@@ -123,6 +124,7 @@ wp_reset_query(); ?>
 						<?php endwhile; 
 						wp_reset_query(); ?>
 					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</div>
