@@ -10,10 +10,81 @@
 	get_header($name, $args); 
 ?>
 
-<div class="bg-about" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BANNER-PERSEMBAHAN-01-scaled.webp);">
-	<h1 class="p-top fst-italic text-center">Bertolong-tolonganlah menanggung bebanmu!<br/>Demikianlah kamu memenuhi hukum Kristus.<br/>Galatia 6 : 2 </h1>
+<div class="bg-about" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BANNER-ALUMNI-WEB-scaled.webp);">
+	<!-- <div class="text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/RHEMA-ASOSIASI.webp" class="w-25 mb-3"></div> -->
+	<h1 class="p-top fst-italic text-center">Rhema Ministerial Association Indonesia (RMAI)</h1>
 </div>
-<div class="single-page pb-0">
-	
+<?php 
+	$args = array(
+		'post_type' => 'rmai',
+		'post_status' => 'publish',
+	);
+	$the_query = new WP_Query( $args );
+	while ( $the_query->have_posts() ) : $the_query->the_post();
+	$idRmai = get_the_ID();
+
+	$visimisi = get_post_meta($idRmai,'rmaivisimisi',true);
+	$value = get_post_meta($idRmai,'rmaivalue',true);
+	$spirit = get_post_meta($idRmai,'rmaisc',true);
+	$titlespirit = $spirit[0]['title-rmaisc'];
+	$descspirit = $spirit[0]['desc-rmaisc'];
+	$imgrmaisc = $spirit[0]['img-rmaisc'];
+	$linkrmaisc = wp_get_attachment_image_src($imgrmaisc,'full');
+	if($linkrmaisc){
+		$urlrmaisc = $linkrmaisc['0'];
+	}
+	$bannermaisc = $spirit[0]['banner-rmaisc'];
+	$linkbannermaisc = wp_get_attachment_image_src($bannermaisc,'full');
+	if($linkbannermaisc){
+		$urlbannermaisc = $linkbannermaisc['0'];
+	}
+
+?>
+<div class="single-page">
+	<div class="container" id="cont1200px">
+		<div class="row">
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3 mb-lg-0"/></div>
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+				<h4 class="title-single-usa-ina mb-3"><?php echo get_the_title($idRmai); ?></h4>
+				<div class="desc-single-usa-ina mb-4"><p><?php echo get_the_content($idRmai); ?></p></div>
+			</div>
+		</div>
+	</div>
 </div>
-<?php get_footer(); ?>
+<img src="<?php echo $urlbannermaisc; ?>" class="w-100 banner-alumni"/>
+<div class="single-page">
+	<div class="container" id="cont1200px">
+		<div class="row">
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+				<h4 class="title-single-usa-ina mb-3"><?php echo $titlespirit; ?></h4>
+				<div class="desc-single-usa-ina mb-0"><p><?php echo $descspirit?></p></div>
+				<?php foreach($visimisi as $vm){ ?>
+				<div class="row mb-3">
+					<div class="col-2 text-center"><img src="<?php echo wp_get_attachment_url($vm['img-rmai-visimisi']); ?>" class="icon-home-why-rhema"/></div>
+					<div class="col-10">
+						<h4 class="title-home-why-rhema mb-1"><?php echo $vm['title-rmai-visimisi']; ?></h4>
+						<p class="desc-home-why-rhema mb-0"><?php echo $vm['desc-rmai-visimisi']; ?></p>
+					</div>
+				</div>
+				<?php } ?>
+			</div>
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo $urlrmaisc; ?>" class="w-100 mb-3 mb-lg-0"></div>
+		</div>
+	</div>
+</div>
+<div class="single-page" style="background-color: #F9F9F9;">
+	<div class="container" id="cont1200px">
+		<h2 class="title-single-about text-center mb-5">Value Spirit Community</h2>
+		<div class="row">
+			<?php foreach($value as $values){ ?>
+			<div class="col-12 col-sm-6 col-lg-4 mb-5">
+				<h4 class="title-single-value"><?php echo $values['title-rmai-value']; ?></h4>
+				<div class="desc-single-value"><?php echo $values['desc-rmai-value']; ?></div>
+			</div>
+			<?php } ?>
+		</div>
+	</div>
+</div>
+<?php endwhile; 
+wp_reset_query();
+get_footer(); ?>

@@ -53,6 +53,6 @@
 </div>
 <div class="bg-dukungan-lainnya" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/DUKUNGAN-LAIN-scaled.webp);">
     <h4 class="title-single-persembahan text-dark text-center mb-3">Dukungan Lainnya</h4>
-    <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan">Konfirmasi<br/>Dukungan Lainnya</a></div>
+    <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan w-25">Konfirmasi<br/>Dukungan Lainnya</a></div>
 </div>
 <?php get_footer(); ?>

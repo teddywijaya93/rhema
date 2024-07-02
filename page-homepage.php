@@ -67,7 +67,7 @@
 				<div class="row mb-3">
 					<div class="col-2 text-center"><img src="<?php echo wp_get_attachment_url($part3['icon-homethird-hover']); ?>" class="icon-home-why-rhema"/></div>
 					<div class="col-10">
-						<h4 class="title-home-why-rhema mb-3"><?php echo $part3['title-homethird']; ?></h4>
+						<h4 class="title-home-why-rhema mb-1"><?php echo $part3['title-homethird']; ?></h4>
 						<p class="desc-home-why-rhema mb-0"><?php echo $part3['desc-homethird']; ?></p>
 					</div>
 				</div>

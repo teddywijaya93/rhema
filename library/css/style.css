@@ -163,7 +163,7 @@ html {scroll-behavior: smooth;}
     line-height: 30px;
 }
 .desc-home-why-rhema{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
     letter-spacing: .3px;
     line-height: 30px;
@@ -403,10 +403,29 @@ html {scroll-behavior: smooth;}
     background: #A72525;
     padding: 60px;
 }
+.img-single-kur{width: 55%;}
 .title-single-kur{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: .3px;
+}
+
+/* ============================== Alumni */
+.banner-alumni{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title-single-value{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    color: #A72525;
+}
+.desc-single-value{
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
 }
 
 /* ============================== Berita */
@@ -496,10 +515,10 @@ html {scroll-behavior: smooth;}
 /* SM */
 @media screen and (min-width: 576px) and (max-width: 992px) { 
     /* Footer */
-    .logo-footer-img {width: 100px;}
+    /* .logo-footer-img {width: 100px;}
     .footer-site-name{font-size: 16px;}
     .footer-site-desc{font-size: 14px;}
-    .footer-site-loc{font-size: 12px;}
+    .footer-site-loc{font-size: 12px;} */
 
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
@@ -518,7 +537,7 @@ html {scroll-behavior: smooth;}
 
     /* Daftar */
     .bg-red-kur{padding: 50px 10px;}
-    .img-single-kur{width: 55% !important;}
+    .img-single-kur{width: 55%}
     .title-single-kur{font-size: 18px;}
 
     /* Persembahan */
@@ -551,7 +570,7 @@ html {scroll-behavior: smooth;}
 
     /* Daftar */
     .bg-red-kur{padding: 50px 10px;}
-    .img-single-kur{width: 55% !important;}
+    .img-single-kur{width: 55%;}
     .title-single-kur{font-size: 18px;}
 
     /* Persembahan */
