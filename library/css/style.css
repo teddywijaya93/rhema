@@ -28,11 +28,20 @@ html {scroll-behavior: smooth;}
     line-height: 25px;
 }
 .header-menu{
+    color: #494545;
     font-size: 16px;
     letter-spacing: .3px;
     margin-right: 20px;
 }
-.header-menu:hover{color: #A72525;}
+.header-menu:hover{
+    color: #A72525;
+    font-weight: 700;
+}
+.active{
+    color: #A72525 !important;
+    font-weight: 700;
+    border-bottom: 1px solid #A72525;
+}
 .z-10{z-index: 10;}
 
 /* ============================== Footer */
@@ -119,6 +128,12 @@ html {scroll-behavior: smooth;}
     background: rgba(100,193,167);
     border: unset;
     color: #FFFFFF;
+}
+.title-404{
+    font-size: 60px;
+    letter-spacing: .3px;
+    line-height: 70px;
+    margin-left: 110px;
 }
 
 /* ============================== Body */
@@ -401,26 +416,57 @@ html {scroll-behavior: smooth;}
 }
 .bg-red-kur{
     background: #A72525;
-    padding: 60px;
+    padding: 70px 30px;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
 }
-.img-single-kur{width: 55%;}
+.bg-white-kur{
+    padding: 30px 30px;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 10px;
+}
+.img-single-kur{width: 50%;}
 .title-single-kur{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: .3px;
 }
+.desc-single-kur p{
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 25px;
+    overflow: hidden;
+    height: 250px;
+}
+.kurikulum-hover{display: none;}
 
 /* ============================== Alumni */
+.p-top-alumni{
+    font-family: "PT Serif", serif;
+    padding: 180px 0 50px 0;
+    color: #A72525;
+    letter-spacing: .3px;
+}
 .banner-alumni{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.img-number-single-value{
+    width: 20%;
+    height: 80px;
+}
 .title-single-value{
     font-size: 18px;
     font-weight: 700;
     letter-spacing: .3px;
+    line-height: 25px;
     color: #A72525;
+    height: 50px;
 }
 .desc-single-value{
     font-size: 16px;
@@ -470,6 +516,40 @@ html {scroll-behavior: smooth;}
     letter-spacing: .3px;
     line-height: 30px;
 }
+.title-single-news-single{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+.desc-single-news-single{
+    font-size: 17px;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+.cat-single-news-single{
+    color: #A72525;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+.title-cat{
+    background: rgb(229, 236, 241);
+    border-radius: 10px;
+    list-style: none;
+}
+.title-cat:hover{background: #A72525;}
+.list-category{
+    font-size: 16px;
+    letter-spacing: .3px;
+    padding: 15px;
+}
+.list-category:hover{color: #FFFFFF;}
+.title-single-news-small{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+.title-single-news-small:hover{color: #A72525;}
 
 /* ============================== Lokasi */
 .bg-lokasi{
@@ -479,6 +559,32 @@ html {scroll-behavior: smooth;}
     height: auto;
     border-radius: 10px;
     padding: 20px 6px;
+}
+.icon-socmed-lokasi{
+    background: #A72525;
+    color: #FFFFFF;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+.title-socmed-lokasi{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+.desc-socmed-lokasi{
+    color: #494545;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
+.desc-socmed-lokasi:hover{
+    color: #A72525;
+    font-weight: 700;
 }
 .title-single-lokasi{
     font-size: 24px;
@@ -526,6 +632,7 @@ html {scroll-behavior: smooth;}
     .desc-home-testimonial{width: 100% !important;}
     .img-home-testimonial{width: 50%;}
     .padding-home{padding: 20px;}
+    .title-404{margin-left: 0px;}
 
     /* Profil */
     .p-top{height: 45px;}
@@ -559,6 +666,7 @@ html {scroll-behavior: smooth;}
     .desc-home-testimonial{width: 100% !important;}
     .img-home-testimonial{width: 50%;}
     .padding-home{padding: 20px;}
+    .title-404{margin-left: 0px;}
 
     /* Profil */
     .p-top{height: 45px;}

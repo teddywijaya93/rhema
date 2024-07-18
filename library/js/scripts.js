@@ -4,6 +4,14 @@ $(document).ready(function() {
         $(".nav").find(".active").removeClass("active");
         $(this).addClass("active");
     });
+
+    $('.switch-kurikulum').hover(function() {
+        $(this).find('.kurikulum').hide();
+        $(this).find('.kurikulum-hover').show();
+    }, function() {
+        $(this).find('.kurikulum-hover').hide();
+        $(this).find('.kurikulum').show();
+    });
 });
 
 // Change Header
@@ -19,6 +27,7 @@ var swiper = new Swiper(".swiper-banner", {
     slidesPerView: 1,
     autoplay: true,
     loop: true,
+    speed: 3000,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -28,8 +37,9 @@ var swiper = new Swiper(".swiper-banner", {
 
 var swiper = new Swiper(".swiper-testimonial", {
     slidesPerView: 1,
-    autoplay: false,
+    autoplay: true,
     loop: true,
+    speed: 3000,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -39,8 +49,9 @@ var swiper = new Swiper(".swiper-testimonial", {
 
 var swiper = new Swiper(".swiper-pengajar", {
     spaceBetween: 30,
-    autoplay: false,
+    autoplay: true,
     loop: true,
+    speed: 3000,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -57,9 +68,10 @@ var swiper = new Swiper(".swiper-pengajar", {
 });
 
 var swiper = new Swiper(".swiper-kurikulum", {
-    spaceBetween: 30,
+    spaceBetween: 35,
     autoplay: false,
     loop: true,
+    speed: 3000,
     grid: {
         fill: 'row',
         rows: 2,

@@ -10,9 +10,11 @@
 	get_header($name, $args); 
 ?>
 
-<div class="bg-about" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BANNER-ALUMNI-WEB-scaled.webp);">
-	<!-- <div class="text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/RHEMA-ASOSIASI.webp" class="w-25 mb-3"></div> -->
-	<h1 class="p-top fst-italic text-center">Rhema Ministerial Association Indonesia (RMAI)</h1>
+<div class="bg-about h-auto" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BANNER-ALUMNI-WEB-scaled.webp);">
+	<div class="p-top-alumni">
+		<div class="text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/RHEMA-ASOSIASI.webp" class="w-25 mb-3"></div>
+		<h1 class="fst-italic fw-bold text-center" style="color: #A72525;">Rhema Ministerial Association Indonesia (RMAI)</h1>
+	</div>
 </div>
 <?php 
 	$args = array(
@@ -78,8 +80,9 @@
 		<div class="row">
 			<?php foreach($value as $values){ ?>
 			<div class="col-12 col-sm-6 col-lg-4 mb-5">
-				<h4 class="title-single-value"><?php echo $values['title-rmai-value']; ?></h4>
-				<div class="desc-single-value"><?php echo $values['desc-rmai-value']; ?></div>
+				<img src="<?php echo wp_get_attachment_url($values['img-number-rmai-value']); ?>" class="img-number-single-value mb-2"/>
+				<h4 class="title-single-value mb-1"><?php echo $values['title-rmai-value']; ?></h4>
+				<div class="desc-single-value mb-0"><?php echo $values['desc-rmai-value']; ?></div>
 			</div>
 			<?php } ?>
 		</div>

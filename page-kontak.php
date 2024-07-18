@@ -23,12 +23,29 @@
     $idKontak = get_the_ID();
 
     $lokasi = get_post_meta($idKontak,'kontaklokasi',true);
+    $socmed = get_post_meta($idKontak,'kontaksosmed',true);
+    $wa = $socmed[0]['whatsapps'];
+    $mail = $socmed[0]['mail'];
 ?>
 <div class="single-page">
 	<div class="container" id="cont1200px">
         <div class="row">
-            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-                
+            <div class="col-12 col-lg-6 my-auto">
+                <div class="row mb-5">
+					<div class="col-2 text-center"><i class="fa fa-whatsapp icon-socmed-lokasi"></i></div>
+					<div class="col-10">
+						<h4 class="title-socmed-lokasi mb-1">Whatsapp</h4>
+						<a class="desc-socmed-lokasi mb-0" href="https://wa.me/<?php echo $wa; ?>" target="_blank"><?php echo $wa; ?></a>
+					</div>
+				</div>
+
+                <div class="row mb-5">
+					<div class="col-2 text-center"><i class="fa fa-envelope icon-socmed-lokasi"></i></div>
+					<div class="col-10">
+						<h4 class="title-socmed-lokasi mb-1">Mail</h4>
+						<a class="desc-socmed-lokasi mb-0" href="mailto:<?php echo $mail; ?>" target="_blank"><?php echo $mail; ?></a>
+					</div>
+				</div>
             </div>
             <div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100"></div>
         </div>

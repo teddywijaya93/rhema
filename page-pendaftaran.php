@@ -75,20 +75,33 @@ wp_reset_query(); ?>
                     $args = array(
                         'post_type' => 'kurikulum',
                         'post_status' => 'publish',
+                        'order' => 'asc',
                     );
                     $the_query = new WP_Query( $args );
                     while ( $the_query->have_posts() ) : $the_query->the_post();
                     $idKur = get_the_ID();
                 ?>
                 <div class="swiper-slide">
-                    <div class="bg-red-kur">
-                        <div class="text-center"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-kur mb-3"/></div>
-                        <h4 class="title-single-kur text-center text-white mb-0"><?php echo get_the_title($idKur); ?></h4>
+                    <div class="switch-kurikulum">
+                        <div class="kurikulum">
+                            <div class="bg-red-kur shadow">
+                                <div class="text-center"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-kur mb-3"/></div>
+                                <h4 class="title-single-kur text-center text-white mb-0"><?php echo get_the_title($idKur); ?></h4>
+                            </div>
+                        </div>
+                        <div class="kurikulum-hover">
+                            <div class="bg-white-kur shadow">
+                                <h4 class="title-single-kur text-start text-dark mb-3"><?php echo get_the_title($idKur); ?></h4>
+                                <div class="desc-single-kur mb-0"><?php echo the_content($idKur); ?></div>
+                            </div>
+                        </div>
                     </div>
+                   
                 </div>
                 <?php endwhile; 
                 wp_reset_query(); ?>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
 	</div>
 </div>
