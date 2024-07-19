@@ -51,7 +51,15 @@
 		<?php // end of wordpress head ?>
 
 		<?php // drop Google Analytics Here ?>
-	
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4Z18XWDQLJ"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-4Z18XWDQLJ');
+		</script>
 		<?php // end analytics ?>
 	</head>
 	
