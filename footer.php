@@ -10,7 +10,7 @@
                         <div class="col-8 my-auto">
                             <h4 class="footer-site-name text-white text-uppercase mb-2"><?php echo get_bloginfo('name'); ?></h4>
                             <p class="footer-site-desc text-white mb-2"><?php echo get_bloginfo('description'); ?></p>
-                            <p class="footer-site-loc text-white text-uppercase mb-0">jakarta bali lampung bangka sumut</p>
+                            <p class="footer-site-loc text-white text-uppercase mb-0">jakarta -- bali -- lampung -- sumut</p>
                         </div>
                     </div>
                   

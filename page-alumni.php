@@ -42,10 +42,13 @@
 	}
 
 ?>
-<div class="single-page">
+<div class="single-page" id="rhmai">
 	<div class="container" id="cont1200px">
 		<div class="row">
-			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3 mb-lg-0"/></div>
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+				<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3 mb-lg-0"/>
+				<div class="text-center"><a href="#" role="button" class="btn btn-buku-pedoman">Download Buku Pedoman Kode <br/> Etik Hamba Tuham Rhema</a></div>
+			</div>
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<h4 class="title-single-usa-ina mb-3"><?php echo get_the_title($idRmai); ?></h4>
 				<div class="desc-single-usa-ina mb-4"><p><?php echo get_the_content($idRmai); ?></p></div>
@@ -53,7 +56,7 @@
 		</div>
 	</div>
 </div>
-<img src="<?php echo $urlbannermaisc; ?>" class="w-100 banner-alumni"/>
+<div id="spirit"><img src="<?php echo $urlbannermaisc; ?>" class="w-100 banner-alumni"/></div>
 <div class="single-page">
 	<div class="container" id="cont1200px">
 		<div class="row">
@@ -70,7 +73,10 @@
 				</div>
 				<?php } ?>
 			</div>
-			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo $urlrmaisc; ?>" class="w-100 mb-3 mb-lg-0"></div>
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+				<img src="<?php echo $urlrmaisc; ?>" class="w-100 mb-3 mb-lg-0"><div class="text-center">
+				<a href="#" role="button" class="btn btn-visimisi">Mulai Bergabung</a></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -79,10 +85,23 @@
 		<h2 class="title-single-about text-center mb-5">Value Spirit Community</h2>
 		<div class="row">
 			<?php foreach($value as $values){ ?>
-			<div class="col-12 col-sm-6 col-lg-4 mb-5">
-				<img src="<?php echo wp_get_attachment_url($values['img-number-rmai-value']); ?>" class="img-number-single-value mb-2"/>
-				<h4 class="title-single-value mb-1"><?php echo $values['title-rmai-value']; ?></h4>
-				<div class="desc-single-value mb-0"><?php echo $values['desc-rmai-value']; ?></div>
+			<div class="col-12 col-sm-6 col-lg-4">
+				<div class="switch-number">
+					<div class="number">
+						<img src="<?php echo wp_get_attachment_url($values['img-number-rmai-value']); ?>" class="img-number-single-value mb-2"/>
+						<div class="card-value">
+							<h4 class="title-single-value mb-1"><?php echo $values['title-rmai-value']; ?></h4>
+							<div class="desc-single-value mb-0"><?php echo $values['desc-rmai-value']; ?></div>
+						</div>
+					</div>
+					<div class="number-hover">
+						<img src="<?php echo wp_get_attachment_url($values['img-number-rmai-value-hover']); ?>" class="img-number-single-value mb-2"/>
+						<div class="card-value">
+							<h4 class="title-single-value mb-1"><?php echo $values['title-rmai-value']; ?></h4>
+							<div class="desc-single-value mb-0"><?php echo $values['desc-rmai-value']; ?></div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<?php } ?>
 		</div>

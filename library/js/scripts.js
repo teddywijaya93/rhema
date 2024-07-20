@@ -12,6 +12,14 @@ $(document).ready(function() {
         $(this).find('.kurikulum-hover').hide();
         $(this).find('.kurikulum').show();
     });
+
+    $('.switch-number').hover(function() {
+        $(this).find('.number').hide();
+        $(this).find('.number-hover').show();
+    }, function() {
+        $(this).find('.number-hover').hide();
+        $(this).find('.number').show();
+    });
 });
 
 // Change Header
@@ -27,7 +35,7 @@ var swiper = new Swiper(".swiper-banner", {
     slidesPerView: 1,
     autoplay: true,
     loop: true,
-    speed: 3000,
+    speed: 2000,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -39,22 +47,28 @@ var swiper = new Swiper(".swiper-testimonial", {
     slidesPerView: 1,
     autoplay: true,
     loop: true,
-    speed: 3000,
+    speed: 2000,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
         clickable: true,
-    }
+    },
+    navigation: {
+        nextEl: "#leftarrowtestimonial",
+        prevEl: "#rightarrowtestimonial",
+    },
 });
 
 var swiper = new Swiper(".swiper-pengajar", {
     spaceBetween: 30,
     autoplay: true,
     loop: true,
-    speed: 3000,
+    speed: 2000,
+    grabCursor: true,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
+        paginationClickable: true,
     },
     navigation: {
         nextEl: "#leftarrow",
@@ -70,8 +84,8 @@ var swiper = new Swiper(".swiper-pengajar", {
 var swiper = new Swiper(".swiper-kurikulum", {
     spaceBetween: 35,
     autoplay: false,
-    loop: true,
-    speed: 3000,
+    loop: false,
+    speed: 2000,
     grid: {
         fill: 'row',
         rows: 2,
@@ -79,6 +93,10 @@ var swiper = new Swiper(".swiper-kurikulum", {
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
+    },
+    navigation: {
+        nextEl: "#leftarrowkurikulum",
+        prevEl: "#rightarrowkurikulum",
     },
     breakpoints: {
         320: {slidesPerView: 2},

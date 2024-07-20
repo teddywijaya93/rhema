@@ -17,16 +17,16 @@
 	<div class="container" id="cont1200px">
         <ul class="nav nav-pills justify-content-start mb-3" id="pills-tab" role="tablist">
 			<li class="nav-item" role="presentation">
-   				<button class="nav-link nav-news text-start active" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+   				<button class="nav-link nav-news text-start active" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">Semua</button>
 			</li>
   			<li class="nav-item" role="presentation">
-   				<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-blog" type="button" role="tab" aria-controls="pills-blog" aria-selected="false">Article</button>
+   				<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-blog" type="button" role="tab" aria-controls="pills-blog" aria-selected="false">Blog</button>
 			</li>
 			<li class="nav-item" role="presentation">
-    			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-news" type="button" role="tab" aria-controls="pills-news" aria-selected="false">News</button>
+    			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-news" type="button" role="tab" aria-controls="pills-news" aria-selected="false">Berita</button>
   			</li>
             <li class="nav-item" role="presentation">
-    			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-event" type="button" role="tab" aria-controls="pills-event" aria-selected="false">Event</button>
+    			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-event" type="button" role="tab" aria-controls="pills-event" aria-selected="false">Renungan</button>
   			</li>
 		</ul>
 
@@ -127,7 +127,7 @@
 							'post_type' => 'post',
 							'posts_per_page' => 9,
 							'post_status' => 'publish',
-							'category__in' => 3,
+							'category__in' => 4,
 							'paged' => $paged,
 						);
 						$the_query = new WP_Query( $args );
@@ -171,7 +171,7 @@
                             'post_type' => 'post',
                             'posts_per_page' => 9,
                             'post_status' => 'publish',
-                            'category__in' => 4,
+                            'category__in' => 3,
                             'paged' => $paged,
                         );
                         $the_query = new WP_Query( $args );

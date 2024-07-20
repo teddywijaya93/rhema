@@ -9,25 +9,37 @@
 	);
 	get_header($name, $args); 
 ?>
-<div class="swiper swiper-banner">
-	<div class="swiper-wrapper">
-		<?php 
-			$args = array(
-				'post_type' => 'banner',
-				'posts_per_page' => 3,
-				'post_status' => 'publish',
-			);
-			$the_query = new WP_Query( $args );
-			while ( $the_query->have_posts() ) : $the_query->the_post();
-			$idBanner = get_the_ID();
-		?>
-		<div class="swiper-slide">
-			<div style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>)" class="banner-home w-100"></div>
+<div id="banner">
+	<?php 
+		$args = array(
+			'post_type' => 'banner',
+			'posts_per_page' => 1,
+			'post_status' => 'publish',
+			'order' => 'asc',
+		);
+		$the_query = new WP_Query( $args );
+		while ( $the_query->have_posts() ) : $the_query->the_post();
+		$idBanner = get_the_ID();
+	?>
+	<div style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>)" class="banner-home w-100">
+		<div class="p-home-banner">
+			<div class="row mb-3 mb-lg-5">
+				<div class="col-1"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/checklist.svg" class="icon-home-banner"></div>
+				<div class="col-9 my-auto"><h1 class="title-home-banner fst-italic text-white mb-0">Belajar Prinsip Alkitab</h1></div>
+			</div>
+			<div class="row mb-3 mb-lg-5">
+				<div class="col-1"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/checklist.svg" class="icon-home-banner"></div>
+				<div class="col-9 my-auto"><h1 class="title-home-banner fst-italic text-white mb-0">Bertumbuh Dalam Iman</h1></div>
+			</div>
+			<div class="row mb-3 mb-lg-5">
+				<div class="col-1"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/checklist.svg" class="icon-home-banner"></div>
+				<div class="col-9 my-auto"><h1 class="title-home-banner fst-italic text-white mb-0">Menemukan Tujuan Hidup</h1></div>
+			</div>
+			<a href="" role="button" class="btn btn-home-daftar">Daftar</a>
 		</div>
-		<?php endwhile; 
-		wp_reset_query(); ?>
 	</div>
-	<div class="swiper-pagination"></div>
+	<?php endwhile; 
+	wp_reset_query(); ?>
 </div>
 
 <?php 
@@ -81,10 +93,12 @@
 		<div class="row">
 			<?php foreach($sec4 as $part4){ ?>
 			<div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
-				<div class="text-center bg-collab" style="background-image: url('<?php echo wp_get_attachment_url($part4['bg-homefour']); ?>')">
-					<img src="<?php echo wp_get_attachment_url($part4['icon-homefour']); ?>" class="img-home-collab mb-3"/>
-					<h4 class="title-home-collab text-white mb-0"><?php echo $part4['title-homefour']; ?></h4>
-				</div>
+				<a href="<?php echo $part4['goto-homefour']; ?>">
+					<div class="text-center bg-collab" style="background-image: url('<?php echo wp_get_attachment_url($part4['bg-homefour']); ?>')">
+						<img src="<?php echo wp_get_attachment_url($part4['icon-homefour']); ?>" class="img-home-collab mb-3"/>
+						<h4 class="title-home-collab text-white mb-0"><?php echo $part4['title-homefour']; ?></h4>
+					</div>
+				</a>
 			</div>
 			<?php } ?>
 		</div>
@@ -124,7 +138,8 @@ wp_reset_query(); ?>
 						<?php endwhile; 
 						wp_reset_query(); ?>
 					</div>
-					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next" id="leftarrowtestimonial"></div>
+					<div class="swiper-button-prev" id="rightarrowtestimonial"></div>
 				</div>
 			</div>
 		</div>

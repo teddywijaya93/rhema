@@ -57,8 +57,8 @@
             <?php foreach($lokasi as $loc){ ?>
             <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <div class="bg-lokasi" style="background-image: url('<?php echo wp_get_attachment_url($loc['bg-kontak-lokasi']); ?>')">
-                    <h4 class="title-single-lokasi text-center text-uppercase text-white w-50 m-auto mb-3"><?php echo $loc['title-kontak-lokasi'] ?></h4>
-                    <p class="desc-single-lokasi text-center text-white w-75 m-auto mb-3"><?php echo $loc['desc-kontak-lokasi']; ?></p>
+                    <h4 class="title-single-lokasi text-center text-uppercase text-white m-auto mb-5"><?php echo $loc['title-kontak-lokasi'] ?></h4>
+                    <p class="desc-single-lokasi text-center text-white w-75 m-auto mb-5"><?php echo $loc['desc-kontak-lokasi']; ?></p>
                     <div class="text-center"><a href="mailto:<?php echo $loc['mail-kontak-lokasi']; ?>" target="_blank" role="button" class="btn btn-lokasi">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;<?php echo $loc['mail-kontak-lokasi']; ?></a>
                     </div>

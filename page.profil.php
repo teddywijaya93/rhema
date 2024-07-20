@@ -57,7 +57,7 @@
 		</div>
 	</div>
 </div>
-<div class="single-page">
+<div class="single-page pt-0">
 	<div class="container" id="cont1200px">
 		<div class="row">
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0 order-lg-1 order-sm-2 order-2">
@@ -80,8 +80,28 @@
 		<div class="row">
 			<?php foreach($pendiri as $pend){ ?>
 			<div class="col-6 col-sm-6 col-lg-4 mb-3 mb-lg-0">
-				<img src="<?php echo wp_get_attachment_url($pend['img-pendiri']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
-				<h4 class="nama-single-pendiri-pengajar text-center mb-0"><?php echo $pend['nama-pendiri']; ?></h4>
+				<div data-bs-toggle="modal" data-bs-target="#<?php echo $pend['id-pendiri']; ?>">
+					<img src="<?php echo wp_get_attachment_url($pend['img-pendiri']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
+					<h4 class="nama-single-pendiri-pengajar text-center mb-0"><?php echo $pend['nama-pendiri']; ?></h4>
+				</div>
+				<div class="modal fade" id="<?php echo $pend['id-pendiri']; ?>">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col-12 col-lg-5">
+										<img src="<?php echo wp_get_attachment_url($pend['img-pendiri']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
+									</div>
+									<div class="col-12 col-lg-7">
+										<h4 class="nama-single-pendiri-pengajar mb-2"><?php echo $pend['nama-pendiri']; ?></h4>
+										<div class="desc-single-pendiri-pengajar"><?php echo $pend['desc-pendiri']; ?></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<?php } ?>
 		</div>
@@ -99,7 +119,6 @@
 				</div>
 				<?php } ?>
 			</div>
-			<div class="swiper-pagination"></div>
 			<div class="swiper-button-next" id="leftarrow"></div>
 			<div class="swiper-button-prev" id="rightarrow"></div>
 		</div>

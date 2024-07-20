@@ -49,11 +49,14 @@
                     <?php } ?>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100"></div>
+            <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100">
+                <div class="text-center"><a href="#" role="button" class="btn btn-single-daftar">Daftar</a></div>
+            </div>
         </div>
 	</div>
 </div>
-<div class="single-page">
+<div class="single-page" id="rbtci">
 	<div class="container" id="cont1200px">
         <div class="row">
             <div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo $urlrbtci; ?>" class="w-100"></div>
@@ -101,7 +104,8 @@ wp_reset_query(); ?>
                 <?php endwhile; 
                 wp_reset_query(); ?>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next" id="leftarrowkurikulum"></div>
+            <div class="swiper-button-prev" id="rightarrowkurikulum"></div>
         </div>
 	</div>
 </div>

@@ -30,23 +30,20 @@ html {scroll-behavior: smooth;}
 .header-menu{
     color: #494545;
     font-size: 16px;
+    font-weight: 700;
     letter-spacing: .3px;
     margin-right: 20px;
 }
-.header-menu:hover{
-    color: #A72525;
-    font-weight: 700;
-}
+.header-menu:hover{color: #A72525;}
 .active{
     color: #A72525 !important;
-    font-weight: 700;
     border-bottom: 1px solid #A72525;
 }
 .z-10{z-index: 10;}
 
 /* ============================== Footer */
 .footer-home{
-    background-image: url('https://dev.rhemaindonesia.org:8888/wp-content/uploads/2024/06/footer-01-scaled.webp');
+    background-image: url('https://dev.rhemaindonesia.org/wp-content/uploads/2024/06/footer-01-scaled.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -62,15 +59,17 @@ html {scroll-behavior: smooth;}
 .footer-site-desc{
     font-family: "PT Serif", serif;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 700;
     letter-spacing: .3px;
 }
 .footer-site-loc{
     font-size: 16px;
+    font-weight: 700;
     letter-spacing: .3px;
 }
 .footer-site-menu{
     font-size: 16px;
+    font-weight: 700;
     letter-spacing: .3px;
 }
 
@@ -145,6 +144,29 @@ html {scroll-behavior: smooth;}
     background-position: center;
     background-size: cover;
 }
+.p-home-banner{
+    padding: 200px 0 0 110px;
+    width: 70%;
+}
+.icon-home-banner{width: 100%;}
+.title-home-banner{
+    font-size: 48px;
+    letter-spacing: .3px;
+}
+.btn-home-daftar{
+    background: #F5CD6C;
+    color: #494545;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    line-height: 22px;
+    padding: 18px;
+    width: 25%;
+}
+.btn-home-daftar:hover{
+    background: #A72525;
+    color: #FFFFFF;
+}
 .icon-hometwo{width: 40%;}
 .title-hometwo{
     font-size: 18px;
@@ -206,9 +228,9 @@ html {scroll-behavior: smooth;}
 /* =========== Testimonials */
 #bg-red-testimonial{
     background: #A72525;
-    padding: 60px 0;
+    padding: 100px 0;
 }
-.m-left-home{margin: 0px 50px 0 100px;}
+.m-left-home{margin: 0px 50px 0 110px;}
 .head-home-testimonial, .head-home-berita{
     font-size: 24px;
     font-weight: bold;
@@ -218,6 +240,35 @@ html {scroll-behavior: smooth;}
 .desc-home-testimonial{
     letter-spacing: .3px;
     line-height: 30px;
+}
+#leftarrowtestimonial{
+    --swiper-navigation-size: 12px;
+    background: #EDEDED;
+    height: 30px;
+    width: 30px;
+    top: 130px;
+    color: #ADACAC;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-left: 2px;
+    margin-right: -10px;
+}
+#rightarrowtestimonial{
+    --swiper-navigation-size: 12px;
+    background: #EDEDED;
+    height: 30px;
+    width: 30px;
+    top: 130px;
+    color: #ADACAC;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: -10px;
+}
+#leftarrowtestimonial:hover , #rightarrowtestimonial:hover{
+    background: #A72525;
+    border-color: transparent;
+    color: #FFFFFF;
 }
 #bg-grey-testimonial{
     background: #F9F9F9;
@@ -258,7 +309,6 @@ html {scroll-behavior: smooth;}
     letter-spacing: .3px;
 }
 .p-top{
-    font-family: "PT Serif", serif;
     padding-top: 200px;
     color: #A72525;
     font-weight: bold;
@@ -302,17 +352,23 @@ html {scroll-behavior: smooth;}
     margin: auto;
 }
 .img-single-pendiri-pengajar{border: 1px solid #494545;}
+.modal{cursor: pointer;}
 .nama-single-pendiri-pengajar{
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .3px;
     line-height: 30px;
 }
+.desc-single-pendiri-pengajar{
+    font-size: 16px;
+    letter-spacing: .3px;
+    line-height: 30px;
+}
 #leftarrow{
-    --swiper-navigation-size: 16px;
+    --swiper-navigation-size: 12px;
     background: #EDEDED;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     top: 130px;
     color: #ADACAC;
     border-radius: 40px;
@@ -321,10 +377,10 @@ html {scroll-behavior: smooth;}
     margin-right: -10px;
 }
 #rightarrow{
-    --swiper-navigation-size: 16px;
+    --swiper-navigation-size: 12px;
     background: #EDEDED;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     top: 130px;
     color: #ADACAC;
     border-radius: 40px;
@@ -356,12 +412,12 @@ html {scroll-behavior: smooth;}
 }
 .title-single-persembahan{
     color: #F5CD6C;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     letter-spacing: .3px;
 }
 .desc-single-persembahan{
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: .3px;
 }
 .btn-konfirmasi-persembahan{
@@ -404,6 +460,19 @@ html {scroll-behavior: smooth;}
     font-size: 16px;
     letter-spacing: .3px;
 }
+.btn-single-daftar{
+    background: #F5CD6C;
+    color: #494545;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    padding: 10px 20px;
+    width: 40%;
+    /* height: 50px; */
+    position: relative;
+    top: -110px;
+}
+.btn-single-daftar:hover{background: #FFFFFF;}
 .title-single-rbtci{
     font-size: 22px;
     font-weight: bold;
@@ -443,14 +512,65 @@ html {scroll-behavior: smooth;}
     height: 250px;
 }
 .kurikulum-hover{display: none;}
+#leftarrowkurikulum{
+    --swiper-navigation-size: 12px;
+    background: #EDEDED;
+    height: 30px;
+    width: 30px;
+    top: 360px;
+    color: #ADACAC;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-left: 2px;
+    margin-right: -10px;
+}
+#rightarrowkurikulum{
+    --swiper-navigation-size: 12px;
+    background: #EDEDED;
+    height: 30px;
+    width: 30px;
+    top: 360px;
+    color: #ADACAC;
+    border-radius: 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: -10px;
+}
+#leftarrowkurikulum:hover , #rightarrowkurikulum:hover{
+    background: #A72525;
+    border-color: transparent;
+    color: #FFFFFF;
+}
 
 /* ============================== Alumni */
 .p-top-alumni{
-    font-family: "PT Serif", serif;
     padding: 180px 0 50px 0;
     color: #A72525;
     letter-spacing: .3px;
 }
+.btn-buku-pedoman{
+    background: #A72525;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    padding: 10px 20px;
+    width: 70%;
+    position: relative;
+    top: -200px;
+}
+.btn-visimisi{
+    background: #F5CD6C;
+    color: #494545;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    padding: 10px 20px;
+    width: 50%;
+    position: relative;
+    top: -250px;
+}
+.btn-buku-pedoman:hover, .btn-visimisi:hover{background: #FFFFFF;}
 .banner-alumni{
     background-repeat: no-repeat;
     background-size: cover;
@@ -459,6 +579,8 @@ html {scroll-behavior: smooth;}
 .img-number-single-value{
     width: 20%;
     height: 80px;
+    position: relative;
+    z-index: 2;
 }
 .title-single-value{
     font-size: 18px;
@@ -473,6 +595,18 @@ html {scroll-behavior: smooth;}
     letter-spacing: .3px;
     line-height: 30px;
 }
+.card-value{
+    padding: 50px 10px 0 10px;
+    position: relative;
+    top: -50px;
+    height: 250px;
+}
+.card-value:hover{
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.number-hover{display: none;}
 
 /* ============================== Berita */
 .nav-pills{
@@ -587,15 +721,16 @@ html {scroll-behavior: smooth;}
     font-weight: 700;
 }
 .title-single-lokasi{
-    font-size: 24px;
+    font-size: 30px;
     font-weight: lighter;
     letter-spacing: .3px;
-    height: 50px;
+    height: 70px;
+    width: 90%;
 }
 .desc-single-lokasi{
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: .3px;
-    line-height: 30px;
+    line-height: 20px;
 }
 .btn-lokasi{
     background: #FFFFFF;
@@ -633,6 +768,16 @@ html {scroll-behavior: smooth;}
     .img-home-testimonial{width: 50%;}
     .padding-home{padding: 20px;}
     .title-404{margin-left: 0px;}
+    .p-home-banner{
+        width: 100%;
+        padding: 200px 0 0 30px;
+    }
+    .icon-home-banner{width: 30px;}
+    .title-home-banner{font-size: 28px;}
+    .btn-home-daftar{
+        width: 50%;
+        padding: 15px;
+    }
 
     /* Profil */
     .p-top{height: 45px;}
@@ -667,6 +812,16 @@ html {scroll-behavior: smooth;}
     .img-home-testimonial{width: 50%;}
     .padding-home{padding: 20px;}
     .title-404{margin-left: 0px;}
+    .p-home-banner{
+        width: 100%;
+        padding: 200px 0 0 30px;
+    }
+    .icon-home-banner{width: 30px;}
+    .title-home-banner{font-size: 28px;}
+    .btn-home-daftar{
+        width: 50%;
+        padding: 15px;
+    }
 
     /* Profil */
     .p-top{height: 45px;}
