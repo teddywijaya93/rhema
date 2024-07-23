@@ -60,9 +60,15 @@
 		<div class="row">
 			<?php foreach($sec2 as $part2){ ?>
 			<div class="col-6 col-sm-6 col-lg-3 mb-3 mb-lg-0">
-				<div class="text-center">
-					<img src="<?php echo wp_get_attachment_url($part2['icon-hometwo']); ?>" class="icon-hometwo mb-3"/>
-					<h4 class="title-hometwo mb-0"><?php echo $part2['title-hometwo']; ?></h4>
+				<div class="switch-home2 text-center">
+					<div class="home2">
+						<img src="<?php echo wp_get_attachment_url($part2['icon-hometwo']); ?>" class="icon-hometwo mb-3"/>
+						<h4 class="title-hometwo mb-0"><?php echo $part2['title-hometwo']; ?></h4>
+					</div>
+					<div class="home2-hover">
+						<img src="<?php echo wp_get_attachment_url($part2['icon-hometwo-hover']); ?>" class="icon-hometwo mb-3"/>
+						<h4 class="title-hometwo mb-0"><?php echo $part2['title-hometwo']; ?></h4>
+					</div>
 				</div>
 			</div>
 			<?php } ?>
@@ -93,12 +99,14 @@
 		<div class="row">
 			<?php foreach($sec4 as $part4){ ?>
 			<div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
-				<a href="<?php echo $part4['goto-homefour']; ?>">
+				<div class="parent">
 					<div class="text-center bg-collab" style="background-image: url('<?php echo wp_get_attachment_url($part4['bg-homefour']); ?>')">
-						<img src="<?php echo wp_get_attachment_url($part4['icon-homefour']); ?>" class="img-home-collab mb-3"/>
-						<h4 class="title-home-collab text-white mb-0"><?php echo $part4['title-homefour']; ?></h4>
+						<a href="<?php echo $part4['goto-homefour']; ?>">
+							<img src="<?php echo wp_get_attachment_url($part4['icon-homefour']); ?>" class="img-home-collab mb-3"/>
+							<h4 class="title-home-collab text-white mb-0"><?php echo $part4['title-homefour']; ?></h4>
+						</a>
 					</div>
-				</a>
+				</div>
 			</div>
 			<?php } ?>
 		</div>
@@ -162,9 +170,9 @@ wp_reset_query(); ?>
 			<div class="col-12 col-sm-6 col-lg-4 mb-3 mb-lg-0">
 				<div class="card border-0">
 					<?php if(has_post_thumbnail()) { ?>
-						<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100">
+						<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
 					<?php } else{ ?>
-						<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BERITA-BANNER-02.webp" class="img-single-news w-100" alt="">	
+						<div id="zoomBerita"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BERITA-BANNER-02.webp" class="img-single-news w-100"></div>
 					<?php } ?>
 					<div class="card-body" style="padding: 10px 0 10px 0;">
 						<div class="mb-3">

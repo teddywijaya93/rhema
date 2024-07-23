@@ -27,9 +27,9 @@
 					<div class="col-12 col-sm-6 col-lg-6 mb-3">
 						<div class="card border-0">
 							<?php if(has_post_thumbnail()) { ?>
-								<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100">
+								<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
 							<?php } else{ ?>
-								<img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100" alt="">	
+								<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
 							<?php } ?>
 							<div class="card-body" style="padding: 10px 0 10px 0;">
 								<div class="mb-3">
@@ -47,7 +47,6 @@
 					<?php endwhile; else : endif; ?>
 				</div>
 			</div>
-
 			<div class="col-12 col-lg-4">
 				<div class="mb-5">
                     <h4 class="cat-single-news-single mb-3"> Categories </h4>
@@ -98,7 +97,6 @@
 		</div>
 	</div>
 </div>
-
 
 </article>
 <?php get_footer(); ?>

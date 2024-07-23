@@ -7,21 +7,19 @@
 	get_header($name, $args);
 	if(have_posts()) : while (have_posts()) : the_post();
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 <div class="bg-pendaftaran" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BERITA-BANNER-01-scaled.webp);">
 	<h1 class="p-top fst-italic text-white text-center pt-0"><?php echo get_the_title(); ?></h1>
 </div>
-
 <div class="single-page">
 	<div class="container" id="cont1200px">
 		<div class="row">
             <div class="col-12 col-lg-8">
 				<?php if(has_post_thumbnail()) { ?>
-                    <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3" alt="<?php echo $getTitle; ?>">
+                    <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3">
                 <?php } else{ ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="w-100 mb-3" alt="<?php echo $getTitle; ?>">	
+                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="w-100 mb-3">	
                 <?php } ?>
 				<div class="mb-3">
 					<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
@@ -36,7 +34,6 @@
 				<!-- Comment -->
 				<!-- <div class="mt-5"><?php //comment_form(); ?></div> -->
 			</div>
-
 			<div class="col-12 col-lg-4">
 				<div class="mb-5">
                     <h4 class="cat-single-news-single mb-3"> Categories </h4>
@@ -89,8 +86,8 @@
 </div>
 
 </article>
-<?php endwhile; ?>
-<?php else : ?>
+<?php endwhile; 
+else :?>
 <article id="post-not-found" class="hentry clearfix">
 	<header class="article-header">
 		<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
@@ -102,5 +99,5 @@
 			<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
 	</footer>
 </article>
-<?php endif; ?>
-<?php get_footer(); ?>
+<?php endif;
+get_footer(); ?>

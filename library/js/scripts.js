@@ -5,6 +5,14 @@ $(document).ready(function() {
         $(this).addClass("active");
     });
 
+    $('.switch-home2').hover(function() {
+        $(this).find('.home2').hide();
+        $(this).find('.home2-hover').show();
+    }, function() {
+        $(this).find('.home2-hover').hide();
+        $(this).find('.home2').show();
+    });
+
     $('.switch-kurikulum').hover(function() {
         $(this).find('.kurikulum').hide();
         $(this).find('.kurikulum-hover').show();
@@ -64,7 +72,6 @@ var swiper = new Swiper(".swiper-pengajar", {
     autoplay: true,
     loop: true,
     speed: 2000,
-    grabCursor: true,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -83,8 +90,8 @@ var swiper = new Swiper(".swiper-pengajar", {
 
 var swiper = new Swiper(".swiper-kurikulum", {
     spaceBetween: 35,
-    autoplay: false,
-    loop: false,
+    autoplay: true,
+    loop: true,
     speed: 2000,
     grid: {
         fill: 'row',

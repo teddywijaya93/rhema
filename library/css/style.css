@@ -176,6 +176,7 @@ html {scroll-behavior: smooth;}
     margin: auto;
     width: 80%;
 }
+.home2-hover{display: none;}
 /* =========== Why Rhema */
 #why{
     background: #F9F9F9;
@@ -206,12 +207,21 @@ html {scroll-behavior: smooth;}
     line-height: 30px;
 }
 /* =========== Collab */
+.parent {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
 .bg-collab{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 500px;
     padding: 20px;
+}
+.parent:hover .bg-collab, .parent:focus .bg-collab{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
 }
 .img-home-collab{
     width: 50%;
@@ -286,7 +296,7 @@ html {scroll-behavior: smooth;}
     letter-spacing: .3px;
     line-height: 28px;
 }
-
+/* =========== Berita */
 .title-single-news:hover{color: #A72525;}
 .btn-home-seeall{
     background: #F5CD6C;
@@ -300,6 +310,11 @@ html {scroll-behavior: smooth;}
 .btn-home-seeall:hover{
     background: #A72525;
     color: #FFFFFF;
+}
+#zoomBerita{overflow: hidden;}
+#zoomBerita:hover img{
+    transform: scale(1.2);
+    transition: .5s ease-in-out;
 }
 
 /* ============================== About */

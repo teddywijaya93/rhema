@@ -113,7 +113,7 @@
 		<div class="swiper swiper-pengajar">
 			<div class="swiper-wrapper">
 				<?php foreach($pengajar as $peng){ ?>
-				<div class="swiper-slide">
+				<div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#<?php echo $peng['id-pengajar']; ?>">
 					<img src="<?php echo wp_get_attachment_url($peng['img-pengajar']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
 					<h4 class="nama-single-pendiri-pengajar text-center mb-0"><?php echo $peng['nama-pengajar']; ?></h4>
 				</div>
@@ -122,6 +122,26 @@
 			<div class="swiper-button-next" id="leftarrow"></div>
 			<div class="swiper-button-prev" id="rightarrow"></div>
 		</div>
+		<?php foreach($pengajar as $peng){ ?>
+		<div class="modal fade" id="<?php echo $peng['id-pengajar']; ?>">
+			<div class="modal-dialog modal-lg modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-12 col-lg-5">
+								<img src="<?php echo wp_get_attachment_url($peng['img-pengajar']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
+							</div>
+							<div class="col-12 col-lg-7">
+								<h4 class="nama-single-pendiri-pengajar mb-2"><?php echo $peng['nama-pengajar']; ?></h4>
+								<div class="desc-single-pendiri-pengajar"><?php echo $peng['desc-pengajar']; ?></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<?php } ?>
 	</div>
 </div>
 <?php endwhile;
