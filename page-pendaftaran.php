@@ -26,6 +26,7 @@
     $rbtci = get_post_meta($idPendaftaran,'pendaftaranrbtci',true);
     $titlerbtji = $rbtci[0]['title-rbtci'];
     $descrbtji = $rbtci[0]['desc-rbtci'];
+    $gotodaftar = $rbtci[0]['goto-pendaftaran'];
     $imgrbtci = $rbtci[0]['img-rbtci'];
 	$linkrbtci = wp_get_attachment_image_src($imgrbtci,'full');
 	if($linkrbtci){
@@ -51,7 +52,7 @@
             </div>
             <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                 <img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100">
-                <div class="text-center"><a href="#" role="button" class="btn btn-single-daftar">Daftar</a></div>
+                <div class="text-center"><a href="<?php echo $gotodaftar; ?>" role="button" class="btn btn-single-daftar">Daftar</a></div>
             </div>
         </div>
 	</div>

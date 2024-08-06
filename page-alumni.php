@@ -30,6 +30,8 @@
 	$spirit = get_post_meta($idRmai,'rmaisc',true);
 	$titlespirit = $spirit[0]['title-rmaisc'];
 	$descspirit = $spirit[0]['desc-rmaisc'];
+	$download = $spirit[0]['download-buku-pedoman'];
+	$gotospirit = $spirit[0]['goto-spirit-community'];
 	$imgrmaisc = $spirit[0]['img-rmaisc'];
 	$linkrmaisc = wp_get_attachment_image_src($imgrmaisc,'full');
 	if($linkrmaisc){
@@ -47,7 +49,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3 mb-lg-0"/>
-				<div class="text-center"><a href="#" role="button" class="btn btn-buku-pedoman">Download Buku Pedoman Kode <br/> Etik Hamba Tuham Rhema</a></div>
+				<div class="text-center"><a href="<?php echo $download; ?>" target="_blank" role="button" class="btn btn-buku-pedoman">Download Buku Pedoman Kode <br/> Etik Hamba Tuham Rhema</a></div>
 			</div>
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<h4 class="title-single-usa-ina mb-3"><?php echo get_the_title($idRmai); ?></h4>
@@ -75,7 +77,7 @@
 			</div>
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<img src="<?php echo $urlrmaisc; ?>" class="w-100 mb-3 mb-lg-0"><div class="text-center">
-				<a href="#" role="button" class="btn btn-visimisi">Mulai Bergabung</a></div>
+				<a href="<?php echo $gotospirit; ?>" target="_blank" role="button" class="btn btn-visimisi">Mulai Bergabung</a></div>
 			</div>
 		</div>
 	</div>
