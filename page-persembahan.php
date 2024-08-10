@@ -9,9 +9,9 @@
 	);
 	get_header($name, $args); 
 ?>
-
-<div class="bg-about" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BANNER-PERSEMBAHAN-01-scaled.webp);">
-	<h1 class="p-top fst-italic text-center">Bertolong-tolonganlah menanggung bebanmu!<br/>Demikianlah kamu memenuhi hukum Kristus.<br/>Galatia 6 : 2 </h1>
+    
+<div class="bg-about" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>);">
+	<h1 class="p-top fst-italic text-center">Bertolong-tolonganlah menanggung bebanmu!<br/>Demikianlah kamu memenuhi hukum Kristus.<br/>Galatia 6 : 2</h1>
 </div>
 <div class="single-page pb-0">
 	<div class="container" id="cont1200px">

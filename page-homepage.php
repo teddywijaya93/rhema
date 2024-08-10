@@ -9,37 +9,35 @@
 	);
 	get_header($name, $args); 
 ?>
-<div id="banner">
-	<?php 
-		$args = array(
-			'post_type' => 'banner',
-			'posts_per_page' => 1,
-			'post_status' => 'publish',
-			'order' => 'asc',
-		);
-		$the_query = new WP_Query( $args );
-		while ( $the_query->have_posts() ) : $the_query->the_post();
-		$idBanner = get_the_ID();
-	?>
-	<div style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>)" class="banner-home w-100">
-		<div class="p-home-banner">
-			<div class="row mb-3 mb-lg-5">
-				<div class="col-1"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/checklist.svg" class="icon-home-banner"></div>
-				<div class="col-9 my-auto"><h1 class="title-home-banner fst-italic text-white mb-0">Belajar Prinsip Alkitab</h1></div>
+<div class="swiper-banner" id="banner">
+	<div class="swiper-wrapper">
+		<?php 
+			$args = array(
+				'post_type' => 'banner',
+				'posts_per_page' => 3,
+				'post_status' => 'publish',
+				'order' => 'asc',
+			);
+			$the_query = new WP_Query( $args );
+			while ( $the_query->have_posts() ) : $the_query->the_post();
+			$idBanner = get_the_ID();
+
+			$bannergoto = get_post_meta($idBanner,'bannergoto',true);
+			$goto = $bannergoto[0]['banner-goto'];
+		?>
+		<div class="swiper-slide">
+			<div style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>)" class="banner-home w-100">
+				<div class="p-home-banner">
+					<?php echo the_content($idBanner); ?>
+					<?php if($goto != null){ ?>
+					<a href="<?php echo $goto; ?>" role="button" class="btn btn-home-daftar">Daftar</a>
+					<?php }else{} ?>
+				</div>
 			</div>
-			<div class="row mb-3 mb-lg-5">
-				<div class="col-1"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/checklist.svg" class="icon-home-banner"></div>
-				<div class="col-9 my-auto"><h1 class="title-home-banner fst-italic text-white mb-0">Bertumbuh Dalam Iman</h1></div>
-			</div>
-			<div class="row mb-3 mb-lg-5">
-				<div class="col-1"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/checklist.svg" class="icon-home-banner"></div>
-				<div class="col-9 my-auto"><h1 class="title-home-banner fst-italic text-white mb-0">Menemukan Tujuan Hidup</h1></div>
-			</div>
-			<a href="" role="button" class="btn btn-home-daftar">Daftar</a>
 		</div>
+		<?php endwhile; 
+		wp_reset_query(); ?>
 	</div>
-	<?php endwhile; 
-	wp_reset_query(); ?>
 </div>
 
 <?php 

@@ -10,8 +10,8 @@
 	get_header($name, $args); 
 ?>
 
-<div class="bg-about" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/HEADER-PROFILE-02-scaled.webp);">
-	<h1 class="p-top fst-italic text-center">RHEMA adalah FIRMAN yang<br/>diucapkan, sebuah TEMPAT, dan<br/>KELUARGA </h1>
+<div class="bg-about" style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>);">
+	<h1 class="p-top fst-italic text-center"><?php echo get_the_title(); ?></h1>
 </div>
 <?php 
 	$args = array(

@@ -10,7 +10,7 @@
 	get_header($name, $args); 
 ?>
 
-<div class="bg-pendaftaran" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/PENDAFTARAN-BANNER-02.webp);">
+<div class="bg-pendaftaran" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>);">
 	<h1 class="p-top fst-italic text-white text-center pt-0"><?php echo get_the_title(); ?></h1>
 </div>
 <?php 

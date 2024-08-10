@@ -10,10 +10,10 @@
 	get_header($name, $args); 
 ?>
 
-<div class="bg-about h-auto" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/BANNER-ALUMNI-WEB-scaled.webp);">
+<div class="bg-about h-auto" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>);">
 	<div class="p-top-alumni">
 		<div class="text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/RHEMA-ASOSIASI.webp" class="w-25 mb-3"></div>
-		<h1 class="fst-italic fw-bold text-center" style="color: #A72525;">Rhema Ministerial Association Indonesia (RMAI)</h1>
+		<h1 class="fst-italic fw-bold text-center" style="color: #A72525;"><?php echo get_the_title(); ?></h1>
 	</div>
 </div>
 <?php 

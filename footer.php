@@ -1,4 +1,4 @@
-<button onclick="topFunction()" id="TOP" title="Back To Top" style="display: block;"><i class="fa fa-angle-up text-white" aria-hidden="true"></i></button>
+<button onclick="topFunction()" id="TOP" title="Back To Top" style="display: block;"><i class="fa-solid fa-angle-up text-white" aria-hidden="true"></i></button>
 
 <footer class="footer" role="contentinfo">
     <div class="footer-basic footer-home">
@@ -36,6 +36,39 @@
                 </div>
                 <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
                     <h4 class="footer-site-menu fw-bold text-white mb-2">Social Media</h4>
+                    <ul class="list-inline text-start mb-0">
+                        <?php 
+                            $args = array(
+                                'post_type' => 'kontak',
+                                'post_status' => 'publish',
+                            );
+                            $the_query = new WP_Query( $args );
+                            while ( $the_query->have_posts() ) : $the_query->the_post();
+                            $idKontak = get_the_ID();
+
+                            $socmed = get_post_meta($idKontak,'kontaksosmed',true);
+                            $yt = $socmed[0]['youtube'];
+                            $ig = $socmed[0]['instagram'];
+                            $tiktok = $socmed[0]['tiktok'];
+                        ?>
+                        <li class="list-inline-item p-0">
+                            <a href="<?php echo $yt; ?>" target="_blank">
+                                <i class="fa-brands fa-youtube text-center text-white me-1" style="font-size: 20px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item p-0">
+                            <a href="<?php echo $ig; ?>" target="_blank">
+                                <i class="fa-brands fa-instagram text-center text-white me-1" style="font-size: 20px;"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item p-0">
+                            <a href="<?php echo $tiktok; ?>" target="_blank">
+                                <i class="fa-brands fa-tiktok text-center text-white" style="font-size: 20px;"></i>
+                            </a>
+                        </li>
+                        <?php endwhile;
+                        wp_reset_query(); ?>
+                    </ul>
                 </div>
             </div>
         </div>

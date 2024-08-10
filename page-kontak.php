@@ -10,7 +10,7 @@
 	get_header($name, $args); 
 ?>
 
-<div class="bg-pendaftaran" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/CONTACT-BANNER-WEB-scaled.webp);">
+<div class="bg-pendaftaran" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>);">
 	<h1 class="p-top fst-italic text-white text-center pt-0"><?php echo get_the_title(); ?></h1>
 </div>
 <?php 
@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-12 col-lg-6 my-auto">
                 <div class="row mb-5">
-					<div class="col-2 text-center"><i class="fa fa-whatsapp icon-socmed-lokasi"></i></div>
+					<div class="col-2 text-center"><i class="fa-brands fa-whatsapp icon-socmed-lokasi"></i></div>
 					<div class="col-10">
 						<h4 class="title-socmed-lokasi mb-1">Whatsapp</h4>
 						<a class="desc-socmed-lokasi mb-0" href="https://wa.me/<?php echo $wa; ?>" target="_blank"><?php echo $wa; ?></a>
@@ -40,7 +40,7 @@
 				</div>
 
                 <div class="row mb-5">
-					<div class="col-2 text-center"><i class="fa fa-envelope icon-socmed-lokasi"></i></div>
+					<div class="col-2 text-center"><i class="fa-regular fa-envelope icon-socmed-lokasi"></i></div>
 					<div class="col-10">
 						<h4 class="title-socmed-lokasi mb-1">Mail</h4>
 						<a class="desc-socmed-lokasi mb-0" href="mailto:<?php echo $mail; ?>" target="_blank"><?php echo $mail; ?></a>
@@ -60,7 +60,7 @@
                     <h4 class="title-single-lokasi text-center text-uppercase text-white m-auto mb-5"><?php echo $loc['title-kontak-lokasi'] ?></h4>
                     <p class="desc-single-lokasi text-center text-white w-75 m-auto mb-5"><?php echo $loc['desc-kontak-lokasi']; ?></p>
                     <div class="text-center"><a href="mailto:<?php echo $loc['mail-kontak-lokasi']; ?>" target="_blank" role="button" class="btn btn-lokasi">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;<?php echo $loc['mail-kontak-lokasi']; ?></a>
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>&nbsp;<?php echo $loc['mail-kontak-lokasi']; ?></a>
                     </div>
                 </div>
             </div>
