@@ -9,9 +9,9 @@
 	);
 	get_header($name, $args); 
 ?>
-    
+
 <div class="bg-about" style="background-image: url(<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>);">
-	<h1 class="p-top fst-italic text-center">Bertolong-tolonganlah menanggung bebanmu!<br/>Demikianlah kamu memenuhi hukum Kristus.<br/>Galatia 6 : 2</h1>
+	<h1 class="p-top fst-italic text-center"><?php echo get_the_title();?></h1>
 </div>
 <div class="single-page pb-0">
 	<div class="container" id="cont1200px">
@@ -52,7 +52,21 @@
 	</div>
 </div>
 <div class="bg-dukungan-lainnya" style="background-image: url(<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/DUKUNGAN-LAIN-scaled.webp);">
-    <h4 class="title-single-persembahan text-dark text-center mb-3">Dukungan Lainnya</h4>
+        <?php 
+            $args = array(
+                'post_type' => 'persembahan',
+                'post_status' => 'publish',
+            );
+            $the_query = new WP_Query( $args );
+            while ( $the_query->have_posts() ) : $the_query->the_post();
+            $idPersembahan = get_the_ID();
+
+            if($idPersembahan == 195){
+        ?>
+    <h4 class="title-single-persembahan text-dark text-center mb-3"><?php echo get_the_title($idPersembahan); ?></h4>
     <div class="text-center"><a href="" role="button" class="btn btn-konfirmasi-persembahan w-25">Konfirmasi<br/>Dukungan Lainnya</a></div>
+    <?php } endwhile; 
+    wp_reset_query(); ?>
 </div>
+
 <?php get_footer(); ?>

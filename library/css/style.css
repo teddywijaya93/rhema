@@ -557,6 +557,37 @@ html {scroll-behavior: smooth;}
     color: #FFFFFF;
 }
 
+.gsection_title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.gfield_label{font-size: 18px !important;}
+#input_1_1, #input_1_3, #input_1_4, #input_1_5, #input_1_7,
+#input_1_8, #input_1_9, #input_1_10, #input_1_14, #input_1_15,
+#input_1_16, #input_1_18, #input_1_19,  #input_1_20, #input_1_21,
+#input_1_24, #input_1_25, #input_1_26, #input_1_28, #input_1_29, #input_1_30,
+#input_1_6_1, #input_1_6_2, #input_1_6_3,
+#input_1_22_1, #input_1_22_2, #input_1_22_3,
+#input_1_23_1, #input_1_23_2, #input_1_23_3{
+    border-radius: 5px;
+    background: #F1F1F1;
+    font-size: 16px;
+    height: 50px;
+    color: #655E5E;
+    width: 100%;
+    border-color: transparent;
+}
+#gform_submit_button_1{
+    background: #A72525;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    padding: 10px 20px;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
 /* ============================== Alumni */
 .p-top-alumni{
     padding: 180px 0 50px 0;
