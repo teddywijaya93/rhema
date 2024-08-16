@@ -6,37 +6,37 @@
             <div class="row">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="row">
-                        <div class="col-4 text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/Logo-Rhema-Indonesia-Bg-Black-1.webp" class="logo-footer-img"></div>
-                        <div class="col-8 my-auto">
+                        <div class="col-3 text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/Logo-Rhema-Indonesia-Bg-Black-1.webp" class="logo-footer-img"></div>
+                        <div class="col-9 my-auto">
                             <h4 class="footer-site-name text-white text-uppercase mb-2"><?php echo get_bloginfo('name'); ?></h4>
                             <p class="footer-site-desc text-white mb-2"><?php echo get_bloginfo('description'); ?></p>
-                            <p class="footer-site-loc text-white mb-0">Jakarta &#x2022; BALI &#x2022; Lampung &#x2022; SUMUT</p>
+                            <p class="footer-site-loc text-white mb-0">Jakarta &#x2022; BALI &#x2022; Lampung &#x2022; SUMUT &#x2022; Distance Learning</p>
                         </div>
                     </div>
                   
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="col-12 col-sm-6 col-lg-4 text-end mb-3 mb-lg-0">
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/">Beranda</a></li>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/">Beranda</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
-                                <li class="footer-site-menu text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
+                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="col-12 col-sm-6 col-lg-2 text-end mb-3 mb-lg-0">
                     <h4 class="footer-site-menu fw-bold text-white mb-2">Social Media</h4>
-                    <ul class="list-inline text-start mb-0">
+                    <ul class="list-inline text-end mb-0">
                         <?php 
                             $args = array(
                                 'post_type' => 'kontak',

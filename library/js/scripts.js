@@ -91,7 +91,7 @@ var swiper = new Swiper(".swiper-pengajar", {
 var swiper = new Swiper(".swiper-kurikulum", {
     spaceBetween: 35,
     autoplay: true,
-    loop: true,
+    loop: false,
     speed: 2000,
     grid: {
         fill: 'row',
