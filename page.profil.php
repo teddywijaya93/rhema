@@ -83,7 +83,7 @@
 				<div data-bs-toggle="modal" data-bs-target="#<?php echo $pend['id-pendiri']; ?>">
 					<img src="<?php echo wp_get_attachment_url($pend['img-pendiri']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
 					<h4 class="nama-single-pendiri-pengajar text-center mb-0"><?php echo $pend['nama-pendiri']; ?></h4>
-					<p class="mb-2"><?php echo $pend['role-pengajar']; ?></h4>
+					<p class="fw-bold mb-0"><?php echo $pend['role-pengajar']; ?></h4>
 				</div>
 				<div class="modal fade" id="<?php echo $pend['id-pendiri']; ?>">
 					<div class="modal-dialog modal-lg modal-dialog-centered">
@@ -96,7 +96,7 @@
 									</div>
 									<div class="col-12 col-lg-7">
 										<h4 class="nama-single-pendiri-pengajar mb-2"><?php echo $pend['nama-pendiri']; ?></h4>
-										<p class="mb-2"><?php echo $pend['role-pendiri']; ?></h4>
+										<p class="fw-bold mb-2"><?php echo $pend['role-pendiri']; ?></h4>
 										<div class="desc-single-pendiri-pengajar"><?php echo $pend['desc-pendiri']; ?></div>
 									</div>
 								</div>
@@ -118,7 +118,7 @@
 				<div class="swiper-slide" data-bs-toggle="modal" data-bs-target="#<?php echo $peng['id-pengajar']; ?>">
 					<img src="<?php echo wp_get_attachment_url($peng['img-pengajar']); ?>" class="img-single-pendiri-pengajar w-100 mb-3"/>
 					<h4 class="nama-single-pendiri-pengajar text-center mb-0"><?php echo $peng['nama-pengajar']; ?></h4>
-					<p class="mb-2"><?php echo $pend['role-pengajar']; ?></h4>
+					<p class="fw-bold mb-0"><?php echo $peng['role-pengajar']; ?></h4>
 				</div>
 				<?php } ?>
 			</div>
@@ -137,7 +137,7 @@
 							</div>
 							<div class="col-12 col-lg-7">
 								<h4 class="nama-single-pendiri-pengajar mb-2"><?php echo $peng['nama-pengajar']; ?></h4>
-								<p class="mb-2"><?php echo $pend['role-pengajar']; ?></h4>
+								<p class="fw-bold mb-2"><?php echo $peng['role-pengajar']; ?></h4>
 								<div class="desc-single-pendiri-pengajar"><?php echo $peng['desc-pengajar']; ?></div>
 							</div>
 						</div>
