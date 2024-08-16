@@ -25,6 +25,7 @@
     $lokasi = get_post_meta($idKontak,'kontaklokasi',true);
     $socmed = get_post_meta($idKontak,'kontaksosmed',true);
     $wa = $socmed[0]['whatsapps'];
+    $wanumber = $socmed[0]['wa-number'];
     $mail = $socmed[0]['mail'];
 ?>
 <div class="single-page">
@@ -35,7 +36,7 @@
 					<div class="col-2 text-center"><i class="fa-brands fa-whatsapp icon-socmed-lokasi"></i></div>
 					<div class="col-10">
 						<h4 class="title-socmed-lokasi mb-1">Whatsapp</h4>
-						<a class="desc-socmed-lokasi mb-0" href="https://wa.me/<?php echo $wa; ?>" target="_blank"><?php echo $wa; ?></a>
+						<a class="desc-socmed-lokasi mb-0" href="https://wa.me/<?php echo $wa; ?>" target="_blank"><?php echo $wanumber; ?></a>
 					</div>
 				</div>
 
