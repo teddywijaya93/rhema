@@ -52,6 +52,8 @@
 	$sec2 = get_post_meta($idHome,'hometwo',true);
 	$sec3 = get_post_meta($idHome,'homethird',true); 
 	$sec4 = get_post_meta($idHome,'homefour',true); 
+	$sec1 = get_post_meta($idHome,'home',true);
+	$titlewhy = $sec1[0]['title-why'];
 ?>
 <div id="rhema">
 	<div class="container" id="cont1200px">
@@ -78,7 +80,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/IMAGE-MENGAPA-RHEMA.webp" class="w-100"></div>
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
-				<h2 class="head-why-rhema mb-4">Mengapa memilih Rhema Bible Training Center Indonesia ?</h2>
+				<h2 class="head-why-rhema mb-4"><?php echo $titlewhy; ?></h2>
 				<?php foreach($sec3 as $part3){ ?>
 				<div class="row mb-3">
 					<div class="col-2 text-center"><img src="<?php echo wp_get_attachment_url($part3['icon-homethird-hover']); ?>" class="icon-home-why-rhema"/></div>
@@ -117,10 +119,24 @@ wp_reset_query(); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12 col-lg-5 mb-3 mb-lg-0" id="bg-red-testimonial">
+				<?php 
+					$args = array(
+						'post_type' => 'home',
+						'post_status' => 'publish',
+					);
+					$the_query = new WP_Query( $args );
+					while ( $the_query->have_posts() ) : $the_query->the_post();
+					$idHome = get_the_ID();
+					$sec1 = get_post_meta($idHome,'home',true);
+					$titletesti = $sec1[0]['title-testimonial'];
+					$desctesti = $sec1[0]['desc-testimonial'];
+				?>
 				<div class="m-left-home">
-					<h2 class="head-home-testimonial text-white mb-3">Testimonial Alumnus</h2>
-					<p class="desc-home-testimonial text-white w-75 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<h2 class="head-home-testimonial text-white mb-3"><?php echo $titletesti; ?></h2>
+					<p class="desc-home-testimonial text-white w-75 mb-0"><?php echo $desctesti; ?></p>
 				</div>
+				<?php endwhile; 
+				wp_reset_query(); ?>
 			</div>
 			<div class="col-12 col-lg-7 mb-3 mb-lg-0" id="bg-grey-testimonial">
 				<div class="swiper swiper-testimonial">
