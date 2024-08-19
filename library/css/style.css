@@ -789,13 +789,6 @@ html {scroll-behavior: smooth;}
 }
 
 /* =========== Section Responsive =========== */
-/* Add Screen */
-@media only screen and (min-width:992px) {
-    #cont1200px{max-width: 1200px;}
-    #cont900px{max-width: 900px;}
-
-}
-
 @media screen and (min-width: 576px) and (max-width: 776px) { 
     .nav-mobile{
         background: #FFFFFF;
@@ -804,10 +797,16 @@ html {scroll-behavior: smooth;}
     .hm-dark{color: #494545 !important;}
 
 }
-
 @media screen and (min-width: 777px) and (max-width: 991px) { 
     .nav-mobile{background: transparent;}
     .hm-dark{color: #494545 !important;}
+}
+
+/* Add Screen */
+@media only screen and (min-width:992px) {
+    #cont1200px{max-width: 1200px;}
+    #cont900px{max-width: 900px;}
+
 }
 
 /* SM */
@@ -863,6 +862,7 @@ html {scroll-behavior: smooth;}
         background: #FFFFFF;
         opacity: .9;
     }
+    .hm-dark{color: #494545 !important;}
 
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
