@@ -106,7 +106,8 @@ var swiper = new Swiper(".swiper-kurikulum", {
         prevEl: "#rightarrowkurikulum",
     },
     breakpoints: {
-        320: {slidesPerView: 2},
+        320: {slidesPerView: 1},
+        480: {slidesPerView: 2},
         992: {slidesPerView: 3},
     }
 });

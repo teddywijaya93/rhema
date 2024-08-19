@@ -15,28 +15,28 @@
                     </div>
                   
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 text-end mb-3 mb-lg-0">
+                <div class="col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
                     <div class="row">
                         <div class="col-6">
                             <ul>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/">Beranda</a></li>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/">Beranda</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
                             <ul>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
-                                <li class="footer-site-menu text-white mb-3"><a href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
+                                <li class="footer-site-menu text-lg-center text-start text-white mb-3"><a href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-2 text-end mb-3 mb-lg-0">
-                    <h4 class="footer-site-menu fw-bold text-white mb-2">Social Media</h4>
-                    <ul class="list-inline text-end mb-0">
+                <div class="col-12 col-sm-12 col-lg-2 mb-3 mb-lg-0">
+                    <h4 class="footer-site-menu fw-bold text-lg-end text-start text-white mb-2">Social Media</h4>
+                    <ul class="list-inline text-lg-end text-start mb-0">
                         <?php 
                             $args = array(
                                 'post_type' => 'kontak',
