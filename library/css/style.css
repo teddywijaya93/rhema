@@ -35,10 +35,7 @@ html {scroll-behavior: smooth;}
     margin-right: 20px;
 }
 .header-menu:hover{color: #A72525;}
-.active{
-    color: #A72525 !important;
-    border-bottom: 1px solid #A72525;
-}
+.active{color: #A72525 !important;}
 .z-10{z-index: 10;}
 
 /* ============================== Footer */
@@ -139,7 +136,7 @@ html {scroll-behavior: smooth;}
 #rhema, #why, #collaboration, #berita{padding: 60px 0;}
 .single-page{padding: 50px 0;}
 .banner-home{
-    height: 700px;
+    height: 800px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -799,15 +796,22 @@ html {scroll-behavior: smooth;}
 
 }
 
-/* SM */
-@media screen and (min-width: 576px) and (max-width: 992px) { 
-    /* Footer */
-    /* .logo-footer-img {width: 100px;}
-    .footer-site-name{font-size: 16px;}
-    .footer-site-desc{font-size: 14px;}
-    .footer-site-loc{font-size: 12px;} */
-    .nav-mobile{background: #FFFFFF;}
+@media screen and (min-width: 576px) and (max-width: 776px) { 
+    .nav-mobile{
+        background: #FFFFFF;
+        opacity: .9;
+    }
+    .hm-dark{color: #494545 !important;}
 
+}
+
+@media screen and (min-width: 777px) and (max-width: 991px) { 
+    .nav-mobile{background: transparent;}
+    .hm-dark{color: #494545 !important;}
+}
+
+/* SM */
+@media screen and (min-width: 576px) and (max-width: 992px) {
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
     .m-left-home{margin: 20px;}
@@ -855,7 +859,10 @@ html {scroll-behavior: smooth;}
     .footer-site-name{font-size: 16px;}
     .footer-site-desc{font-size: 14px;}
     .footer-site-loc{font-size: 12px;}
-    .nav-mobile{background: #FFFFFF;}
+    .nav-mobile{
+        background: #FFFFFF;
+        opacity: .9;
+    }
 
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}

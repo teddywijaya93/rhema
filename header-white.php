@@ -77,19 +77,19 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="nav navbar-nav ms-auto mb-2 mb-lg-0">
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'home'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/">Beranda</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'profil'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'pendaftaran'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'berita'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'persembahan'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
-						<li class="nav-item my-auto"><a class="nav-link header-menu text-white <?php echo $args['page'] == 'kontak'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'home'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/">Beranda</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'profil'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/profil">Profil</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'pendaftaran'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/pendaftaran">Pendaftaran</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'alumni'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/alumni">Alumni</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'berita'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/berita">Berita</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'persembahan'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/persembahan">Persembahan</a></li>
+						<li class="nav-item my-auto"><a class="nav-link header-menu hm-dark text-white <?php echo $args['page'] == 'kontak'? 'active' : '' ?>" href="<?php echo get_site_url(); ?>/hubungi-kami">Hubungi Kami</a></li>
 					</ul>
 				</div> 
 			</div>
 		</nav>
 		
-		<nav class="navbar navbar-expand-md navbar-light nav-mobile fixed-top shadow-lg" id="section-header-top">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top shadow-lg" id="section-header-top">
 			<div class="container" id="cont1200px">
 				<a class="navbar-brand" href="<?php echo get_site_url(); ?>">
 					<div class="row">

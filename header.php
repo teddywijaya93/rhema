@@ -90,7 +90,7 @@
 			</div>
 		</nav>
 		
-		<nav class="navbar navbar-expand-md navbar-light nav-mobile fixed-top shadow-lg" id="section-header-top">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top shadow-lg" id="section-header-top">
 			<div class="container" id="cont1200px">
 				<a class="navbar-brand" href="<?php echo get_site_url(); ?>">
 					<div class="row">
