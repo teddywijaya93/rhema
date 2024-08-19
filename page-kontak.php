@@ -55,8 +55,9 @@
 <div class="single-page">
 	<div class="container" id="cont1200px">
         <div class="row">
-            <?php foreach($lokasi as $loc){ ?>
-            <div class="col-12 col-sm-6 col-lg-3 mb-3 mb-lg-0">
+            <?php foreach($lokasi as $loc){ 
+            if($loc['title-kontak-lokasi'] != 'Distance Learning'){ ?>
+            <div class="col-12 col-sm-6 col-lg-3 mb-3">
                 <div class="bg-lokasi" style="background-image: url('<?php echo wp_get_attachment_url($loc['bg-kontak-lokasi']); ?>')">
                     <h4 class="title-single-lokasi text-center text-uppercase text-white m-auto mb-5"><?php echo $loc['title-kontak-lokasi'] ?></h4>
                     <p class="desc-single-lokasi text-center text-white w-75 m-auto mb-5"><?php echo $loc['desc-kontak-lokasi']; ?></p>
@@ -65,7 +66,17 @@
                     </div>
                 </div>
             </div>
-            <?php } ?>
+            <?php }else{ ?>
+            <div class="col-12 mb-3">
+                <div class="bg-lokasi" style="background-image: url('<?php echo wp_get_attachment_url($loc['bg-kontak-lokasi']); ?>')">
+                    <h4 class="title-single-lokasi text-center text-uppercase text-white m-auto mb-5"><?php echo $loc['title-kontak-lokasi'] ?></h4>
+                    <p class="desc-single-lokasi text-center text-white w-75 m-auto mb-5"><?php echo $loc['desc-kontak-lokasi']; ?></p>
+                    <div class="text-center"><a href="mailto:<?php echo $loc['mail-kontak-lokasi']; ?>" target="_blank" role="button" class="btn btn-lokasi">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>&nbsp;<?php echo $loc['mail-kontak-lokasi']; ?></a>
+                    </div>
+                </div>
+            </div>
+            <?php }} ?>
         </div>
 	</div>
 </div>
