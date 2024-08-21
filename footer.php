@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-lg-2 mb-3 mb-lg-0">
-                    <h4 class="footer-site-menu fw-bold text-lg-end text-center text-white mb-2">Social Media</h4>
+                    <h4 class="footer-site-menu fw-bold text-lg-end text-center text-white mb-2 mt-3">Social Media</h4>
                     <ul class="list-inline text-lg-end text-center mb-0">
                         <?php 
                             $args = array(
