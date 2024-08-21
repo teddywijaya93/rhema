@@ -69,7 +69,7 @@
 				<a class="navbar-brand" href="<?php echo get_site_url(); ?>">
 					<div class="row">
 						<div class="col-5 col-sm-12 col-lg-5 col-sm-12 pe-0"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/Logo-Rhema-Indonesia-Bg-Black-1.webp" class="logo-header-img"></div>
-						<div class="col-6 text-uppercase my-auto d-block d-sm-none d-lg-block"><p class="txt-logo text-white mb-0"> Rhema<br/>Indonesia</p></div>
+						<div class="col-6 text-uppercase my-auto d-block d-sm-none d-lg-block"><p class="txt-logo txt-dark text-white mb-0"> Rhema<br/>Indonesia</p></div>
 					</div>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">

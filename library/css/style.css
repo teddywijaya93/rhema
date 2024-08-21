@@ -795,11 +795,13 @@ html {scroll-behavior: smooth;}
         opacity: .9;
     }
     .hm-dark{color: #494545 !important;}
+    .txt-dark{color: #494545 !important;}
 
 }
 @media screen and (min-width: 777px) and (max-width: 991px) { 
     .nav-mobile{background: transparent;}
     .hm-dark{color: #494545 !important;}
+    .txt-dark{color: #494545 !important;}
 }
 
 /* Add Screen */
@@ -856,13 +858,14 @@ html {scroll-behavior: smooth;}
     /* Footer */
     .logo-footer-img {width: 100px;}
     .footer-site-name{font-size: 16px;}
-    .footer-site-desc{font-size: 14px;}
+    .footer-site-desc{font-size: 12px;}
     .footer-site-loc{font-size: 12px;}
     .nav-mobile{
         background: #FFFFFF;
         opacity: .9;
     }
     .hm-dark{color: #494545 !important;}
+    .txt-dark{color: #494545 !important;}
 
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}

@@ -15,7 +15,7 @@
                     </div>
                   
                 </div>
-                <div class="col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0">
+                <div class="col-12 col-sm-12 col-lg-4 mb-3 mb-lg-0 d-none d-lg-block">
                     <div class="row">
                         <div class="col-6">
                             <ul>
