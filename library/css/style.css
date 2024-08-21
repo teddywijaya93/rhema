@@ -796,19 +796,19 @@ html {scroll-behavior: smooth;}
     }
     .hm-dark{color: #494545 !important;}
     .txt-dark{color: #494545 !important;}
-
+    .footer-home{padding: 50px 0 10px 0;}
 }
 @media screen and (min-width: 777px) and (max-width: 991px) { 
     .nav-mobile{background: transparent;}
     .hm-dark{color: #494545 !important;}
     .txt-dark{color: #494545 !important;}
+    .footer-home{padding: 50px 0 10px 0;}
 }
 
 /* Add Screen */
 @media only screen and (min-width:992px) {
     #cont1200px{max-width: 1200px;}
     #cont900px{max-width: 900px;}
-
 }
 
 /* SM */
@@ -857,6 +857,7 @@ html {scroll-behavior: smooth;}
 @media only screen and (max-width:575px) {
     /* Footer */
     .logo-footer-img {width: 100px;}
+    .footer-home{padding: 50px 0 10px 0;}
     .footer-site-name{font-size: 16px;}
     .footer-site-desc{font-size: 12px;}
     .footer-site-loc{font-size: 12px;}
