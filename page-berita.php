@@ -51,22 +51,24 @@
                     ?>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
 						<div class="card border-0">
-							<?php if(has_post_thumbnail()) { ?>
-								<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
-							<?php } else{ ?>
-								<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
-							<?php } ?>
-							<div class="card-body" style="padding: 10px 0 10px 0;">
-								<div class="mb-3">
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
-									<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php if(has_post_thumbnail()) { ?>
+									<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
+								<?php } else{ ?>
+									<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
+								<?php } ?>
+								<div class="card-body" style="padding: 10px 0 10px 0;">
+									<div class="mb-3">
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
+										<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+									</div>
+									<h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4>
 								</div>
-								<a href="<?php echo get_permalink(); ?>"><h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4></a>
-							</div>
+							</a>
 						</div>
 					</div>
                     <?php endwhile; 
@@ -95,22 +97,24 @@
                     ?>
                  	<div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
 						<div class="card border-0">
-							<?php if(has_post_thumbnail()) { ?>
-								<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
-							<?php } else{ ?>
-								<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
-							<?php } ?>
-							<div class="card-body" style="padding: 10px 0 10px 0;">
-								<div class="mb-3">
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
-									<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php if(has_post_thumbnail()) { ?>
+									<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
+								<?php } else{ ?>
+									<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
+								<?php } ?>
+								<div class="card-body" style="padding: 10px 0 10px 0;">
+									<div class="mb-3">
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
+										<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+									</div>
+									<h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4>
 								</div>
-								<a href="<?php echo get_permalink(); ?>"><h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4></a>
-							</div>
+							</a>
 						</div>
 					</div>`
 					<?php endwhile; 
@@ -139,22 +143,24 @@
 					?>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
 						<div class="card border-0">
-							<?php if(has_post_thumbnail()) { ?>
-								<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
-							<?php } else{ ?>
-								<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
-							<?php } ?>
-							<div class="card-body" style="padding: 10px 0 10px 0;">
-								<div class="mb-3">
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
-									<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php if(has_post_thumbnail()) { ?>
+									<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
+								<?php } else{ ?>
+									<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
+								<?php } ?>
+								<div class="card-body" style="padding: 10px 0 10px 0;">
+									<div class="mb-3">
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
+										<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+									</div>
+									<h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4>
 								</div>
-								<a href="<?php echo get_permalink(); ?>"><h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4></a>
-							</div>
+							</a>
 						</div>
 					</div>
 					<?php endwhile; 
@@ -183,22 +189,24 @@
                     ?>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
 						<div class="card border-0">
-							<?php if(has_post_thumbnail()) { ?>
-								<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
-							<?php } else{ ?>
-								<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
-							<?php } ?>
-							<div class="card-body" style="padding: 10px 0 10px 0;">
-								<div class="mb-3">
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
-									<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php if(has_post_thumbnail()) { ?>
+									<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
+								<?php } else{ ?>
+									<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
+								<?php } ?>
+								<div class="card-body" style="padding: 10px 0 10px 0;">
+									<div class="mb-3">
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
+										<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+									</div>
+									<h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4>
 								</div>
-								<a href="<?php echo get_permalink(); ?>"><h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4></a>
-							</div>
+							</a>
 						</div>
 					</div>
 					<?php endwhile; 
@@ -209,7 +217,7 @@
                 </div>
             </div>
 
-			<!-- Blog -->
+			<!-- Spirit Blog -->
 			<div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-event">
                 <div class="row">
                     <?php
@@ -227,22 +235,24 @@
                     ?>
 					<div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3">
 						<div class="card border-0">
-							<?php if(has_post_thumbnail()) { ?>
-								<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
-							<?php } else{ ?>
-								<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
-							<?php } ?>
-							<div class="card-body" style="padding: 10px 0 10px 0;">
-								<div class="mb-3">
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
-									<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
-									<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
-									<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+							<a href="<?php echo get_permalink(); ?>">
+								<?php if(has_post_thumbnail()) { ?>
+									<div id="zoomBerita"><img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news w-100"></div>
+								<?php } else{ ?>
+									<div id="zoomBerita"><img src="<?php echo get_template_directory_uri(); ?>/library/images/notfound.png" class="img-single-news w-100"></div>
+								<?php } ?>
+								<div class="card-body" style="padding: 10px 0 10px 0;">
+									<div class="mb-3">
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-01.svg" class="icon-single-news"/>
+										<span class="cat-single-news me-3"> <?php echo the_category(', '); ?> </span>
+										<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-03.svg" class="icon-single-news"/>
+										<span class="cat-single-news"> <?php echo get_the_author(); ?> </span>
+									</div>
+									<h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4>
 								</div>
-								<a href="<?php echo get_permalink(); ?>"><h4 class="title-single-news"> <?php echo get_the_title(); ?> </h4></a>
-							</div>
+							</a>
 						</div>
 					</div>
 					<?php endwhile; 

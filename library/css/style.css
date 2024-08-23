@@ -680,7 +680,7 @@ html {scroll-behavior: smooth;}
 }
 .img-single-news{
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
 }
 .cat-single-news, .cat-single-news a{
     color: #A72525;
@@ -722,7 +722,7 @@ html {scroll-behavior: smooth;}
 }
 .list-category:hover{color: #FFFFFF;}
 .title-single-news-small{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: .3px;
 }

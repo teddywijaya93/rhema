@@ -56,15 +56,13 @@
 								'post_type' => 'post',
 								'posts_per_page' => 3 ,
 								'post_status' => 'publish',
-								// 'meta_key' => 'views',
-								// 'orderby' => 'meta_value_num',
 							);
 							$the_query = new WP_Query( $args );
 							while ( $the_query->have_posts() ) : $the_query->the_post();
 							$idPost = get_the_ID(); 
 							$getTitle = get_the_title($idPost);
 						?>
-						<div class="col-4">
+						<div class="col-4 my-auto">
 							<?php if(has_post_thumbnail()) { ?>
 								<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="img-single-news h-auto w-100 mb-3">
 							<?php } else{ ?>
@@ -74,7 +72,7 @@
 						<div class="col-8">
 							<a href="<?php echo get_permalink(); ?>"><h3 class="title-single-news-small"><?php echo $getTitle; ?></h3></a>
 							<img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/ICON-BERITA-02.svg" class="icon-single-news"/>
-							<span class="cat-single-news me-3"><?php echo get_the_date('d M Y'); ?></span>
+							<span class="cat-single-news ms-1"><?php echo get_the_date('d M Y'); ?></span>
 						</div>
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
