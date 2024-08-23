@@ -29,7 +29,7 @@
     			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-event" type="button" role="tab" aria-controls="pills-event" aria-selected="false">Renungan</button>
   			</li>
 			  <li class="nav-item" role="presentation">
-    			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-blog" type="button" role="tab" aria-controls="pills-blog" aria-selected="false">Spirit Blog</button>
+    			<button class="nav-link nav-news text-start" data-bs-toggle="pill" data-bs-target="#pills-spirit" type="button" role="tab" aria-controls="pills-spirit" aria-selected="false">Spirit Blog</button>
   			</li>
 		</ul>
 
@@ -218,7 +218,7 @@
             </div>
 
 			<!-- Spirit Blog -->
-			<div class="tab-pane fade" id="pills-event" role="tabpanel" aria-labelledby="pills-event">
+			<div class="tab-pane fade" id="pills-spirit" role="tabpanel" aria-labelledby="pills-spirit">
                 <div class="row">
                     <?php
 						$paged = (get_query_var('paged')) ? (get_query_var('paged')) : 1;
