@@ -867,6 +867,10 @@ html {scroll-behavior: smooth;}
     }
     .hm-dark{color: #494545 !important;}
     .txt-dark{color: #494545 !important;}
+    .nav-news-li{
+        width: 100%;
+        height: 50px;
+    }
 
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
