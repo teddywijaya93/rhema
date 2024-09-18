@@ -33,16 +33,16 @@
         <div class="row">
             <div class="col-12 col-lg-6 my-auto">
                 <div class="row mb-5">
-					<div class="col-2 text-center"><i class="fa-brands fa-whatsapp icon-socmed-lokasi"></i></div>
-					<div class="col-10">
+					<div class="col-3 col-md-2 text-center"><i class="fa-brands fa-whatsapp icon-socmed-lokasi"></i></div>
+					<div class="col-8 col-md-10">
 						<h4 class="title-socmed-lokasi mb-1">Whatsapp</h4>
 						<a class="desc-socmed-lokasi mb-0" href="https://wa.me/<?php echo $wa; ?>" target="_blank"><?php echo $wanumber; ?></a>
 					</div>
 				</div>
 
                 <div class="row mb-5">
-					<div class="col-2 text-center"><i class="fa-regular fa-envelope icon-socmed-lokasi"></i></div>
-					<div class="col-10">
+					<div class="col-3 col-md-2 text-center"><i class="fa-regular fa-envelope icon-socmed-lokasi"></i></div>
+					<div class="col-8 col-md-10">
 						<h4 class="title-socmed-lokasi mb-1">Mail</h4>
 						<a class="desc-socmed-lokasi mb-0" href="mailto:<?php echo $mail; ?>" target="_blank"><?php echo $mail; ?></a>
 					</div>

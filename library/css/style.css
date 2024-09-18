@@ -789,19 +789,30 @@ html {scroll-behavior: smooth;}
 }
 
 /* =========== Section Responsive =========== */
+@media only screen and (max-width: 284px) {
+    .txt-dark, .txt-logo{display: none;}
+}
 @media screen and (min-width: 576px) and (max-width: 776px) { 
     .nav-mobile{
         background: #FFFFFF;
         opacity: .9;
     }
     .hm-dark{color: #494545 !important;}
-    .txt-dark{color: #494545 !important;}
+    .txt-dark, .txt-logo{
+        color: #494545 !important;
+        font-size: 17px;
+        line-height: 20px;
+    }
     .footer-home{padding: 50px 0 10px 0;}
 }
 @media screen and (min-width: 777px) and (max-width: 991px) { 
     .nav-mobile{background: transparent;}
     .hm-dark{color: #494545 !important;}
-    .txt-dark{color: #494545 !important;}
+    .txt-dark, .txt-logo{
+        color: #494545 !important;
+        font-size: 17px;
+        line-height: 20px;
+    }
     .footer-home{padding: 50px 0 10px 0;}
 }
 
@@ -851,6 +862,7 @@ html {scroll-behavior: smooth;}
     /* Persembahan */
     .bg-persembahan-type{background-position: left;}
     .btn-konfirmasi-persembahan{width: 75%;}
+    .title-single-value{height: auto;}
 }
 
 /* XS */
@@ -866,11 +878,16 @@ html {scroll-behavior: smooth;}
         opacity: .9;
     }
     .hm-dark{color: #494545 !important;}
-    .txt-dark{color: #494545 !important;}
+    .txt-dark, .txt-logo{
+        color: #494545 !important;
+        font-size: 17px;
+        line-height: 20px;
+    }
     .nav-news-li{
         width: 100%;
         height: 50px;
     }
+    .logo-header-img{width: 80px;}
 
     /* Home */
     .icon-home-why-rhema, .desc-single-visi-misi{width: 100%;}
@@ -891,7 +908,10 @@ html {scroll-behavior: smooth;}
     }
 
     /* Profil */
-    .p-top{height: 45px;}
+    .p-top{
+        height: 45px;
+        /* padding-top: 30px !important; */
+    }
     .desc-single-visi-misi{font-size: 16px;}
     .nama-single-pendiri-pengajar{
         font-size: 16px;
@@ -910,4 +930,13 @@ html {scroll-behavior: smooth;}
     /* Persembahan */
     .bg-persembahan-type{background-position: left;}
     .btn-konfirmasi-persembahan{width: 75%;}
+
+    /* Kontak */
+    .title-socmed-lokasi, .desc-socmed-lokasi{font-size: 16px;}
+    .title-single-value{height: auto;}
+    .icon-socmed-lokasi{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
 }

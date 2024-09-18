@@ -6,8 +6,8 @@
             <div class="row">
                 <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                     <div class="row">
-                        <div class="col-3 text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/Logo-Rhema-Indonesia-Bg-Black-1.webp" class="logo-footer-img"></div>
-                        <div class="col-9 my-auto">
+                        <div class="col-12 col-sm-3 col-lg-3 text-center"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/06/Logo-Rhema-Indonesia-Bg-Black-1.webp" class="logo-footer-img mb-3 mb-sm-0"></div>
+                        <div class="col-12 col-sm-9 col-lg-9 my-auto text-center text-sm-start">
                             <h4 class="footer-site-name text-white text-uppercase mb-2"><?php echo get_bloginfo('name'); ?></h4>
                             <p class="footer-site-desc text-white mb-2"><?php echo get_bloginfo('description'); ?></p>
                             <p class="footer-site-loc text-white mb-0">Jakarta &#x2022; BALI &#x2022; Lampung &#x2022; SUMUT &#x2022; Distance Learning</p>

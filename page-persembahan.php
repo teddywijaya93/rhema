@@ -70,7 +70,7 @@
             if($idPersembahan == 195){
         ?>
     <h4 class="title-single-persembahan text-dark text-center mb-3"><?php echo get_the_title($idPersembahan); ?></h4>
-    <div class="text-center"><a href="https://wa.me/<?php echo $wapersembahanconf; ?>" target="_blank" role="button" class="btn btn-konfirmasi-persembahan w-25">Konfirmasi<br/>Dukungan Lainnya</a></div>
+    <div class="text-center"><a href="https://wa.me/<?php echo $wapersembahanconf; ?>" target="_blank" role="button" class="btn btn-konfirmasi-persembahan w-auto">Konfirmasi<br/>Dukungan Lainnya</a></div>
     <?php } endwhile; 
     wp_reset_query(); ?>
 </div>

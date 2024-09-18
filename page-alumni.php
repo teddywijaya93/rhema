@@ -49,7 +49,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'full'); ?>" class="w-100 mb-3 mb-lg-0"/>
-				<div class="text-center"><a href="<?php echo $download; ?>" target="_blank" role="button" class="btn btn-buku-pedoman">Download Buku Pedoman Kode <br/> Etik Hamba Tuham Rhema</a></div>
+				<div class="text-center"><a href="<?php echo $download; ?>" target="_blank" role="button" class="btn btn-buku-pedoman w-auto">Download Buku Pedoman Kode <br/> Etik Hamba Tuham Rhema</a></div>
 			</div>
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<h4 class="title-single-usa-ina mb-3"><?php echo get_the_title($idRmai); ?></h4>
