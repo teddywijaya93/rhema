@@ -326,4 +326,10 @@ function add_file_types_to_uploads($file_types){
 	return $file_types;
 }
 add_action('upload_mimes', 'add_file_types_to_uploads'); 
+
+function extend_preview_link_expiration() {
+	return 7 * DAY_IN_SECONDS; // Mengatur durasi menjadi 7 hari
+}
+add_filter('ppp_nonce_life', 'extend_preview_link_expiration');
+
 ?>
