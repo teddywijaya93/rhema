@@ -29,6 +29,7 @@
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 		<meta name="google-site-verification" content="" />
+		<meta name="google-site-verification" content="KZv5gG8f-6c_jddEvYwii3S8LE8iwCre5tTgaxgaaKI" />
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
