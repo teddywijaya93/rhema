@@ -78,7 +78,16 @@
 <div id="why">
 	<div class="container" id="cont1200px">
 		<div class="row">
-			<div class="col-12 col-lg-6 mb-3 mb-lg-0"><img src="<?php echo get_site_url(); ?>/wp-content/uploads/2024/07/IMAGE-MENGAPA-RHEMA.webp" class="w-100"></div>
+			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
+				<iframe width="100%" 
+					height="500px" 
+					src="https://www.youtube.com/embed/H9VfPwDveNo?si=aDHTk8auxvuvlMiU" 
+					frameborder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+					referrerpolicy="strict-origin-when-cross-origin" 
+					allowfullscreen>
+				</iframe>
+			</div>
 			<div class="col-12 col-lg-6 mb-3 mb-lg-0">
 				<h2 class="head-why-rhema mb-4"><?php echo $titlewhy; ?></h2>
 				<?php foreach($sec3 as $part3){ ?>
